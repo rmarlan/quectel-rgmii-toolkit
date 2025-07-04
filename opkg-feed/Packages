@@ -192,7 +192,7 @@ Description: A general first system patch for SDXPINN OpenWRT
 
 Package: sdxpinn-quecmanager
 Version: 2.2.3
-Depends: libc, sdxpinn-mount-fix, atinout
+Depends: sdxpinn-mount-fix, sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager-beta
 Section: admin
 Architecture: aarch64_cortex-a53
