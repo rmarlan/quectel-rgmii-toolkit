@@ -1,7 +1,6 @@
 #!/bin/sh
 
 
-
 newroot() {
     /bin/echo "Begin mount fix process to make a usable userspace"
 
@@ -19,18 +18,18 @@ newroot() {
 
     # Ensure necessary directories exist for overlay and pivot_root
     /bin/echo "Creating new overlay system"
-    if [ ! -d /data/rootfs ]; then
-        mkdir -p /data/rootfs
+    if [ ! -d /usrdata/rootfs ]; then
+        mkdir -p /usrdata/rootfs
     fi
-    if [ ! -d /data/rootfs-workdir ]; then
-        mkdir -p /data/rootfs-workdir
+    if [ ! -d /usrdata/rootfs-workdir ]; then
+        mkdir -p /usrdata/rootfs-workdir
     fi
     if [ ! -d /rootfs ]; then
         mkdir -p /rootfs
     fi
 
     # Mount the new overlay filesystem
-    /bin/mount -t overlay overlay -o lowerdir=/,upperdir=/data/rootfs,workdir=/data/rootfs-workdir /rootfs
+    /bin/mount -t overlay overlay -o lowerdir=/,upperdir=/usrdata/rootfs,workdir=/usrdata/rootfs-workdir /rootfs
 
     # Create the real_rootfs directory in the new root
     if [ ! -d /rootfs/real_rootfs ]; then
