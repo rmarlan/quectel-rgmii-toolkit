@@ -71,6 +71,9 @@ newroot() {
     /bin/mount --bind /etc/machine-id /real_rootfs/etc/machine-id
     /bin/mount --bind /var/volatile /real_rootfs/var/volatile
     
+    # Mount orginal rootfs as RO
+    /bin/mount -o remount,ro /real_rootfs
+    
     echo "Complete"
 }
 
