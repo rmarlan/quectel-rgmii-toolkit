@@ -1,0 +1,3856 @@
+Package: lowi-common-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-launcher
+Version: 1.0-1
+Depends: libc, loc-mq-client, loc-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: leproperties
+Version: 2.0-2
+Depends: libc, libselinux, libcutils, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: garden-app
+Version: 1.0-1
+Depends: libc, location-api, loc-core, location-client-api, location-integration-api, data-items, izat-client-api, lbs-core-hdr, cdfw-remote-api, cdfw, cdfw-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: cdfw
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, cdfw-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: terminfo
+Version: 6.3-3
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: acdbdata
+Version: 1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qcom-gps-utils
+Version: 1.0-1
+Depends: libc, glib2, libexecinfo, libcutils, loc-pla-hdr, location-api-iface
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libuci-lua
+Version: 2021-10-22-f84f49f0-6
+Depends: libc, libuci20130104, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnetmgr_common
+Version: 1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: liblucihttp0
+ABIVersion: 0
+Version: 2023-03-15-9b5b683f-1
+Depends: libc
+Provides: liblucihttp
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libpam
+Version: 1.5.1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: cgi-io
+Version: 2022-08-10-901b0f04-21
+Depends: libc, libubox20220515, libubus20220601
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: iputils-arping
+Version: 20211215-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-lib-base
+Version: git-20.232.39649-1f6dc29
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, luci-lib-jsonc, liblucihttp-lua
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libc
+Version: 1.2.3-4
+Depends: libgcc1
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-ebtables
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libion
+Version: 1.0-1
+Depends: libc, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: audio-log-utils
+Version: 1
+Depends: libc, glib2, libutils, libcutils, libexpat, libion
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: sign_abl
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: lowi-server
+Version: 1.0-1
+Depends: libc, libnl200, loc-hal, loc-launcher, lowi-common-hdr, lowi-client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qcril-qmi-services
+Version: 1.0-1
+Depends: libc, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libbz2-1.0
+ABIVersion: -1.0
+Version: 1.0.8-1
+Depends: libc
+Provides: libbz2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ftm
+Version: 1.0-1
+Depends: libc, libnl200, libnl-genl200, diag, ath6kl-utils, libcutils, glib2, hci-qcomm-init, bttransport, hidl-client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bt-property
+Version: 3.0-2
+Depends: libc, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: phantap
+Version: 2022.02.12-e80be649-1
+Depends: libc, libpcap1, libnl-tiny1, ip-full, kmod-nft-bridge
+Status: install user installed
+Architecture: all
+Conffiles:
+ /etc/config/phantap f2002b024d86d169bf328d3fa3b56e1a9c9e45178154fc265569d868d5a8388f
+Installed-Time: 1733796300
+
+Package: luci-app-mwan3
+Version: git-23.093.40772-fa4dc75
+Depends: libc, mwan3
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+
+Package: opkg
+Version: 2022-02-24-d038e5b6-2
+Depends: libc, uclient-fetch, libpthread, libubox20220515
+Status: install user installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/opkg.conf f38c19f696ea87c0b30eb5bfeb8657237f4625e1a749c58b99f01595edfb6446
+ /etc/opkg/customfeeds.conf 61d1f3aa62fe977614ed0c2f0ad3b2ee2f7b451bfb34812071d86d31a4d43d4a
+Installed-Time: 1733796300
+
+Package: ql-common-tools
+Version: 1.0-1
+Depends: libc, nand-utils, libcutils, quectel-features-config, common
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-usb
+Version: 1.0-1
+Depends: libc, dsutils, ql-common-tools, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-app-opkg
+Version: git-23.093.42303-e16f620
+Depends: libc, opkg
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: user_permissions
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: pal
+Version: 1
+Depends: libc, media-headers, tinyalsa, tinycompress, ar-gsl, libexpat, glib2, capiv2-headers, acdbdata, audio-route, core-include, agm-sw-binder-client, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: fs_mgr
+Version: 1.0-1
+Depends: libc, core-include, libcutils, liblog, logwrapper, libmincrypt, ext4_utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libpthread
+Version: 1.2.3-4
+Depends: libgcc1
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ubus
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubus20220601, libblobmsg-json20220515, ubusd
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: powerstateservice
+Version: 1.0-1
+Depends: libc, glib2, libcutils, liblog, qmi, qmiservices, qmiidl, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ethernet-config
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, ql-common-tools, quectel-features-config, libxml2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libuci20130104
+ABIVersion: 20130104
+Version: 2021-10-22-f84f49f0-6
+Depends: libc, libubox20220515
+Provides: libuci
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ebtables-legacy
+Version: 2018-06-27-48cff25d-1
+Depends: libc, kmod-ebtables
+Provides: ebtables
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 200:/usr/sbin/ebtables:/usr/sbin/ebtables-legacy
+
+Package: kmod-bt-dts
+Version: 5.15+1.0-2
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnetfilter-queue1
+ABIVersion: 1
+Version: 1.0.5-4
+Depends: libc, libmnl0, libnfnetlink0
+Provides: libnetfilter-queue
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: rpcd
+Version: 2022-12-15-7de4820c-1
+Depends: libc, libubus20220601, libubox20220515, libuci20130104, libblobmsg-json20220515, libjson-c5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/rpcd 1a40da0ebe45b1afd131dfc4650592913e38445e7fe42f96d3b95ad5151ac0e6
+Installed-Time: 1733796300
+
+Package: izat-client-api
+Version: 1.0-1
+Depends: libc, izat-api-hdr, location-service, location-client-api, mapdata-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libpci
+Version: 3.8.0-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-lib-ip
+Version: git-20.250.76529-62505bd
+Depends: libc, liblua5.1.5, libnl-tiny1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qahw-api
+Version: 1
+Depends: libc, libhardware, libcutils, libion, glib2, tinycompress, tinyalsa, libexpat, pal, acdbdata, media-headers, audio-utils, qahw, core-include, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ip-full
+Version: 6.2.0-4
+Depends: libc, libnl-tiny1, libbpf20220308
+Provides: ip
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 300:/sbin/ip:/usr/libexec/ip-full
+
+Package: ntrip-client-integration-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libwolfssl5.5.4.ee39414e
+ABIVersion: 5.5.4.ee39414e
+Version: 5.5.4-stable-4
+Depends: libc
+Provides: libcyassl, libwolfssl, libcyassl5.5.4.ee39414e
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ntrip-client-api
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: wlan-uci
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nfnetlink
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: bttransport
+Version: 3.0-6
+Depends: libc, glib2, libcutils, libutils, qmi-framework, diag, hci-qcomm-init
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libqmi-ip
+Version: 1-1
+Depends: libc, diag, qmi, qmi-framework, qmiservices, qmiidl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libubus-lua
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubus20220601, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-diag-iface
+Version: 1.0-1
+Depends: libc, diag, qcom-gps-utils, location-client-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-crypto-hash
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nf-reject6
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: protobuf-lite
+Version: 3.17.3-1
+Depends: libc, zlib, libpthread, libatomic1, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: glib2
+Version: 2.70.5-4
+Depends: libc, zlib, libpthread, libffi, libattr, libpcre
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libiwinfo-lua
+Version: 2022-12-15-8d158096-1
+Depends: libc, libiwinfo20210430, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qmi_simple_ril_test
+Version: 1-1
+Depends: libc, diag, qmiservices, qmiidl, qmi, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-r8125
+Version: 5.15+9.008.00-2
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-client-api-testapp
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, location-client-api, location-integration-api, location-hal-daemon
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: configdb
+Version: 1-1
+Depends: libc, common, diag, dsutils, xmllib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: diag-router
+Version: 1.0-1
+Depends: libc, common, liblog, qmi-framework, glib2, ql-common-tools
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-br-netfilter
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: conntrackd
+Version: 1.4.6-3
+Depends: libc, libnetfilter-conntrack3, libnetfilter-cttimeout1, libnetfilter-cthelper0, libnetfilter-queue1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: common-tools
+Version: 1.0-1
+Depends: libc, libnl200, libnl-genl200, zlib, diag, cld80211-lib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: atcmd
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: liblzma
+Version: 5.2.4-1
+Depends: libc, libpthread
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-mod-system
+Version: git-23.013.73113-588381e
+Depends: libc, luci-base
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ntrip-client-playback
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, diag, ntrip-client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: powerapp
+Version: 1.0-2
+Depends: libc, libcutils, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: openssl-util
+Version: 1.1.1t-3
+Depends: libc, libopenssl1.1, libopenssl-conf
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nf-flow
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnl-tiny1
+ABIVersion: 1
+Version: 2021-11-21-8e0555fb-1
+Depends: libc
+Provides: libnl-tiny
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: gnss-powerhandler
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, location-api, powerstateservice
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libustream-wolfssl20201210
+ABIVersion: 20201210
+Version: 2022-12-08-9217ab46-2
+Depends: libc, libubox20220515, libwolfssl5.5.4.ee39414e
+Provides: libustream-wolfssl
+Conflicts: libustream-openssl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: atfwd-daemon
+Version: 1-1
+Depends: libc, common, libqmi, qmi, qmiservices, qmiidl, qmi-framework, libqmi-client-qmux, dsutils, ds_atctrl, ql-common-tools, atcop, libqcmap_client, ql-mbedtls, dsi_netctrl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-lib-crc-ccitt
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libselinux-setenforce
+Version: 3.3-2
+Depends: libc, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 300:/usr/sbin/setenforce:/usr/sbin/libselinux-setenforce
+
+Package: ar-util
+Version: 1
+Depends: libc, ar-osal
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libselinux
+Version: 3.3-2
+Depends: libc, libsepol, libpcre, musl-fts
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: location-api
+Version: 1.0-1
+Depends: libc, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-api-wds
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, qmi, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: getrandom
+Version: 2021-08-03-205defb5-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: tinyalsa
+Version: 1
+Depends: libc, libcutils, glib2, sndparser, libutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libiptext0
+ABIVersion: 0
+Version: 1.8.7-7
+Depends: libc, libxtables12
+Provides: libiptext
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: mapdata-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-theme-bootstrap
+Version: git-23.093.42704-b47268a
+Depends: libc
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-pppoe
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ppp, kmod-pppox
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libuuid1
+ABIVersion: 1
+Version: 2.37.4-2
+Depends: libc, librt
+Provides: libuuid
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libbpf20220308
+ABIVersion: 20220308
+Version: 2022-03-08-04c465fd-1
+Depends: libc, libelf1
+Provides: libbpf
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: iw-full
+Version: 5.16-1
+Depends: libc, libnl-tiny1
+Provides: iw
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: busybox-selinux
+Version: 1.35.0-5
+Depends: libc, libpam, jsonfilter, libselinux
+Provides: busybox
+Status: install user installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/syslog.conf e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Installed-Time: 1733796300
+
+Package: quectel-features-config
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qmiservices
+Version: 1-1
+Depends: libc, qcril-qmi-services, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libcap
+Version: 2.63-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libcap-ng
+Version: 0.8.2-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: izat-core
+Version: 1.0-1
+Depends: libc, lbs-core-hdr, loc-api-v02, qcom-gps-utils, loc-base-util, izat-core-hdr, locutil, loc-core, loc-qwes-iface
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-pppox
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ppp
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-integration-api
+Version: 1.0-1
+Depends: libc, glib2, libcutils, loc-pla-hdr, qcom-gps-utils, location-api-msg-proto, location-client-api-hdr, loc-diag-iface-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qahw
+Version: 1
+Depends: libc, libcutils, glib2, liblog, media-headers, audio-utils, libhardware, core-include, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: location-qapi
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, location-client-api
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: netmgrd
+Version: 1-1
+Depends: libc, libnetmgr, libnetmgr_common, diag, qmiservices, qmiidl, libqmi-client-qmux, libqmi-client-helper, qmi, qmi-framework, rmnetctl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: init-audio
+Version: 1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ipt-conntrack
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core, kmod-nf-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nf-reject
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-client-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: atcop
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, libqmi-client-helper, qmiservices, qmiidl, libqmi-client-qmux, ql-lib-ipc, ql-lib-utils, dsutils, ds_atctrl, ql-common-tools, libopenssl1.1, libxml2, ql-usb, libpugixml, ql-syslog, quectel-features-config, libqcmap_client, libqcmap_lan_client, libmbedtls12, loc-api-v02, qcom-gps-utils, location-api-msg-proto, location-client-api, location-integration-api, loc-hal, ql-esim
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: liblog
+Version: 1.0-1
+Depends: libc, libstdcpp6, core-include
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ntrip-client
+Version: 1.0-1
+Depends: libc, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: procd-ujail
+Version: 2022-06-01-7a009685-5
+Depends: libc, libubox20220515, libubus20220601, libuci20130104, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: base-files
+Version: 11-r20134-5f15225c1e
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/ethers 56bda09b0aa3d1e88107bfa8a1c6e4449d5c1f47245dc1c4037ff9b5db163b7c
+ /etc/group 45e8cab268d4a2254d48ccb1f889630047e81758de54a614cad5449fdbebe19c
+ /etc/hosts 31b840f1c22270807e74649d652fa0aa19d40b025c2594257a487167ba50efe1
+ /etc/inittab 64239230813259b7200e9edccb7d80e5273a151fd2159b7bac559f0cbc87c37c
+ /etc/iproute2/rt_protos a0712b1771c8d5f3e0dcf9a6314880e71aa3498ea1ae873535bdfcf70d814061
+ /etc/iproute2/rt_tables f771e2b81741f70e3faf658dc504f0dc048672fc8caaadea15e46c35da3de8f8
+ /etc/passwd 6a451aa33393f47ade89b8bce4d9711818c2630394c3967265ffed276bb25a55
+ /etc/profile 7babc6b9024e6898b29dbe35c4c1162fa37821eab9cf0f40579ae136559a084b
+ /etc/protocols 7d551355d5540b07b9d86e623cbbc4abecbb94d2a662b3afcc917940eb0e3d52
+ /etc/rc.local 515018aa94eb4937dade12dc0d69890b352af35a5ab5fb8203f9ed10990ac06f
+ /etc/services 754ccc71ca347bc79ac4c45139d416b7cf1e65a919dad1db15613a216cd6b9cc
+ /etc/shadow 9000a74fcbf027301e784909e74e2cfff1b879707432090fadedc8527858873e
+ /etc/shells 8b35ce73c18161a7d7ed16fa244410993bd031515260e3e0c11749047df48d0a
+ /etc/shinit f633939cdda16a3116225a578f457295b2a0da824c47d5f0e90a58806c059321
+ /etc/sysctl.conf c02fe88dc055a1eaee9e7cb631760a3a5a9cea55610b42aa45196838c6f1a55e
+ /etc/sysupgrade.conf 9e87b05fe2f12c84d1c465b396322748479f64bc40e5bab061887f0bd95020a6
+Installed-Time: 1733796300
+
+Package: kmod-nf-nat
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: pciids
+Version: 0.359-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ipanat
+Version: 1-1
+Depends: libc, librt, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qdi
+Version: 1-1
+Depends: libc, dsutils, diag, qmiservices, qmiidl, libqmi-client-qmux, libqmi-client-helper, qmi, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: hci-qcomm-init
+Version: 3.0-4
+Depends: libc, glib2, libcutils, libutils, qmi-framework, diag
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libpcre
+Version: 8.45-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: QCMAP_Ref_Daemon
+Version: 1-1
+Depends: libc, diag, dsutils, qmi-framework, libqcmap_client, libqcmaputils, qmiservices, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-crypto-crc32c
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-crypto-hash
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: gtest
+Version: 1.0-1
+Depends: libc, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ebtables-watchers
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ebtables
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rmnetctl
+Version: 1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-emac_ioss
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: diag
+Version: 1.0-1
+Depends: libc, common, liblog, qmi-framework, glib2, time-genoff
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-audio-devicetree
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: netifd
+Version: 2022-08-25-76d2d41b-1
+Depends: libc, libuci20130104, libnl-tiny1, libubus20220601, ubus, ubusd, jshn, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/udhcpc.user 4dabffbc2110a29e01babc63d9b8db94da49efd3ed784d35b49a559ac8ce7035
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: coreutils
+Version: 9.0-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: xt-adapter
+Version: 1.0-1
+Depends: libc, izat-core, loc-glue
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ipt-raw
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: nlp-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnl-route200
+ABIVersion: 200
+Version: 3.5.0-1
+Depends: libc, libnl-core200
+Provides: libnl-route
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-r8168
+Version: 5.15+8.051.02-2
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libubus20220601
+ABIVersion: 20220601
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubox20220515
+Provides: libubus
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: dsutils
+Version: 1-1
+Depends: libc, common, diag, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: izat-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-qcacld32-ll
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown), kmod-wlan-cnss2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: pciutils
+Version: 3.8.0-2
+Depends: libc, libkmod, libpci, pciids
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: gnsspps
+Version: 1.0-1
+Depends: libc, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ar-osal
+Version: 1
+Depends: libc, libcutils, libion, glib2, kmod-audio-kernel
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: protobuf
+Version: 3.17.3-1
+Depends: libc, zlib, libpthread, libatomic1, libstdcpp6, protobuf-lite
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: agm-sw-binder-server
+Version: 1
+Depends: libc, libutils, libcutils, binder, agm, glib2, audio-utils, core-include, audio-log-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: liblwm2m_clnt_ipc
+Version: 1-1
+Depends: libc, libnetmgr, libporting_layer, diag, qdi, dsi_netctrl, qmi, qmiservices, qmi-framework, dsutils, xmllib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: dnsmasq
+Version: 2.90-7
+Depends: libc, libubus20220601
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/dhcp ddd520eb24451a892c9c666d83c10c9ea4fc944efbc34a149bc962c56bd8812f
+ /etc/dnsmasq.conf 1e6ab19c1ae5e70d609ac7b6246541d52042e4dee1892f825266507ef52d7dfd
+Installed-Time: 1733796300
+
+Package: kmod-audio-kernel
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libsepol
+Version: 3.3-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: radish
+Version: 1-1
+Depends: libc, dsutils, diag
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: nand-utils
+Version: 2.1.4-1
+Depends: libc, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ds_atctrl_test
+Version: 1-1
+Depends: libc, ds_atctrl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libkmod
+Version: 27-2
+Depends: libc, zlib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnl200
+ABIVersion: 200
+Version: 3.5.0-1
+Depends: libc, libnl-genl200, libnl-route200, libnl-nf200
+Provides: libnl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ubusd
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubox20220515, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libnetfilter-conntrack3
+ABIVersion: 3
+Version: 1.0.9-2
+Depends: libc, libnfnetlink0, kmod-nf-conntrack-netlink, libmnl0
+Provides: libnetfilter-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: QCMAP_CLI
+Version: 1-1
+Depends: libc, diag, dsutils, qmi-framework, libqcmap_client, qmiservices, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bt-cert
+Version: 3.0-1
+Depends: libc, glib2, fluoride, btvendorhal
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: agm
+Version: 1
+Depends: libc, tinyalsa, glib2, ar-gsl, acdbdata, acdb, ats, audio-utils, core-include, audio-log-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: btvendorhal
+Version: 3.0-1
+Depends: libc, libcutils, libutils, libhardware
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nft-bridge
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nft-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-lib-crc32c
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-crypto-crc32c
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libelf1
+ABIVersion: 1
+Version: 0.148-1
+Depends: libc, zlib
+Provides: libelf, libelf11
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ds_atctrl
+Version: 1-1
+Depends: libc, dsutils, diag, qmiservices, qmiidl, libqmi, qmi
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libqmi-client-qmux
+Version: 1-1
+Depends: libc, dsutils
+Provides: libqmi_client_qmux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ipacm
+Version: 1-1
+Depends: libc, libxml2, libnetfilter-conntrack3, ipanat, libstdcpp6, libexecinfo
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: wlan-sigma-dut
+Version: 1.0-1
+Depends: libc, libnl200, libnl-genl200
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-mod-status
+Version: git-23.093.42411-713f701
+Depends: libc, luci-base, libiwinfo20210430, libiwinfo-lua
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libxtables12
+ABIVersion: 12
+Version: 1.8.7-7
+Depends: libc
+Provides: libxtables
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: pal-net-if
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, libopenssl1.1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: izat-provider
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, location-service, lbs-core-hdr, location-api, loc-core, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-api-msg-proto
+Version: 1.0-1
+Depends: libc, glib2, protobuf, loc-pla-hdr, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libqmi-client-helper
+Version: 1-1
+Depends: libc, qmi-framework, dsutils
+Provides: libqmi_client_helper
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-lib-utils
+Version: 1.0-1
+Depends: libc, nand-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: lbs-core-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libjson-script20220515
+ABIVersion: 20220515
+Version: 2022-05-15-d2223ef9-1
+Depends: libc, libubox20220515
+Provides: libjson-script
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bt-app
+Version: 3.0-1
+Depends: libc, btvendorhal, glib2, libchrome, fluoride, libhardware
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libmbedtls12
+ABIVersion: 12
+Version: 2.28.2-1
+Depends: libc
+Provides: libmbedtls
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libqcmap_client
+Version: 1-1
+Depends: libc, diag, dsutils, qmiservices, qmi-framework, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: xmllib
+Version: 1-1
+Depends: libc, common, diag
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-api-v02
+Version: 1.0-1
+Depends: libc, libutils, loc-core, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libgpiod
+Version: 1.6.3-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-ctccselfreg
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, ql-common-tools, ql-syslog, curl, diag, dsutils, dsi_netctrl, ds_atctrl, libqcmap_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nft-nat
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nft-core, kmod-nf-nat
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: firewall
+Version: 2022-02-17-4cd7d4f3-3
+Depends: libc, libubox20220515, libubus20220601, libuci20130104, libip4tc2, libip6tc2, libiptext0, libiptext6-0, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat
+Provides: uci-firewall
+Conflicts: firewall4
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/firewall 2d0802f4067ce426ed2b106344cd254c068307e6c2f7ba08ff7446cf9a3f67ca
+ /etc/firewall.user bd68324966481011f5e36570258ad97dd422655c16f3119d48325ed8459de510
+Installed-Time: 1733796300
+
+Package: libmagic
+Version: 5.41-1
+Depends: libc, zlib, liblzma, libbz2-1.0
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libxml2
+Version: 2.10.3-1
+Depends: libc, libpthread, zlib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libqcmaputils
+Version: 1-1
+Depends: libc, diag, dsutils, qmiservices
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-app-firewall
+Version: git-23.093.42704-1c01c64
+Depends: libc, uci-firewall
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nf-ipt
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ipt-conntrack-extra
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core, kmod-ipt-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: initmss
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ipa_fws
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: sqlite3-cli
+Version: 3410100-1
+Depends: libc, libsqlite3-0, libedit
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qwesd_scripts
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: procd-selinux
+Version: 2022-06-01-7a009685-5
+Depends: libc, ubusd, ubus, libjson-script20220515, ubox, libubox20220515, libubus20220601, libblobmsg-json20220515, libjson-c5, jshn, libselinux
+Provides: procd
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libmnl0
+ABIVersion: 0
+Version: 1.0.5-1
+Depends: libc
+Provides: libmnl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: tinycompress
+Version: 1
+Depends: libc, libcutils, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qcril-nr-headers
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-pla-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libmodpb64
+Version: 3.0-1
+Depends: libc, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libsqlite3-0
+ABIVersion: -0
+Version: 3410100-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: tcpdump
+Version: 4.9.3-4
+Depends: libc, libpcap1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ubi-utils
+Version: 2.1.4-1
+Depends: libc, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: hal-pal
+Version: 1
+Depends: libc, libhardware, libcutils, libion, glib2, tinycompress, tinyalsa, libexpat, pal, acdbdata, media-headers, audio-utils, qahw, core-include, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: cellular_device_manager_demo
+Version: 1-1
+Depends: libc, dsutils, diag, libcellular_device_manager, libqcmap_client, libqcmap_cm, QCMAP_ConnectionManager, location-client-api, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ip6tables
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ar-gsl
+Version: 1
+Depends: libc, spf, gpr, ar-osal, ar-util, acdb
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: fs-scrub-daemon
+Version: 1.0-1
+Depends: libc, libcap, glib2, qmi-framework, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: odhcp6c
+Version: 2022-08-05-7d21e8d8-18
+Depends: libc, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/odhcp6c.user 6d2b77cbb3ff311ea6e7237fe150bf272bf0b3a6c0b4e9e00c6423fd6b637557
+Installed-Time: 1733796300
+
+Package: libutils
+Version: 1.0-1
+Depends: libc, safe-iop, core-include, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: fstools
+Version: 2022-06-02-93369be0-2
+Depends: libc, ubox, ubi-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: uclient-fetch
+Version: 2023-04-13-007d9454-1
+Depends: libc, libuclient20201210
+Provides: wget
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 200:/usr/bin/wget:/bin/uclient-fetch
+
+Package: kmod-qca-phy
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-qwes-iface
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, securemsm-noship, securemsm
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: safe-iop
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: securemsm
+Version: 1.0-1
+Depends: libc, securemsm-noship, minkipc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libchrome
+Version: 3.0-2
+Depends: libc, libexecinfo, libevent2-7, libmodpb64, gtest, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: fluoride
+Version: 3.0-1
+Depends: libc, zlib, btvendorhal, libchrome, bttransport, libutils, libcutils, libhardware
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: iptables-mod-ipopt
+Version: 1.8.7-7
+Depends: libc, libxtables12, kmod-ipt-ipopt
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ethtool
+Version: 5.16-1
+Depends: libc
+Conflicts: ethtool-full
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: uci
+Version: 2021-10-22-f84f49f0-6
+Depends: libc, libuci20130104
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: lua
+Version: 5.1.5-10
+Depends: libc, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: logwrapper
+Version: 1.0-1
+Depends: libc, core-include, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: selinux-policy
+Version: 1.1
+Depends: libc
+Status: install user installed
+Architecture: all
+Conffiles:
+ /etc/selinux/config f6d8f4867cb0cb7009e56abedd95a3c929ee86d967f7e0b498726ad6e360badf
+Installed-Time: 1733796300
+
+Package: kmod-ebtables-ipv4
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ebtables
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ebtables-ipv6
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ebtables
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libip4tc2
+ABIVersion: 2
+Version: 1.8.7-7
+Depends: libc
+Provides: libip4tc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: dropbear
+Version: 2022.82-3
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/dropbear 0198dbc97b5a9aac76a5c6233684571ccdcc91fcb735e91c36d2b06a98158589
+ /etc/dropbear/dropbear_ed25519_host_key e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+ /etc/dropbear/dropbear_rsa_host_key e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Installed-Time: 1733796300
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+
+Package: mboem
+Version: 1.0-1
+Depends: libc, glib2, libcutils, diag, libqmi-ip, qmiidl, qmi, qmi-framework, libjson-c5, ubus, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: cdfw-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: curl
+Version: 8.10.0-1
+Depends: libc, libcurl4
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnetmgr_rmnet_ext
+Version: 1-1
+Depends: libc, libnetmgr, libnetmgr_common, diag, rmnetctl, qmi, dsutils, qmi, qmi-framework, libqmi-client-helper
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: diag-reboot-app
+Version: 1.0-1
+Depends: libc, glib2, diag, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libqmi
+Version: 1.30.8-1
+Depends: libc, glib2, libmbim, libqrtr-glib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-compat
+Version: git-23.093.42303-ef4cd04
+Depends: libc, luci-base
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: port-bridge
+Version: 1-1
+Depends: libc, dsutils, ubus, ubox
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-wlan-dts
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rpcd-mod-file
+Version: 2022-12-15-7de4820c-1
+Depends: libc, libubus20220601, libubox20220515, rpcd
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qcril-data-hal
+Version: 1.0-1
+Depends: libc, glib2, diag, qmi-framework, qmi, qcril-data-hal-headers, qcril-data-hal-messages, qdpr, qcril-nr, dsi_netctrl, netmgrd
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: odhcpd-ipv6only
+Version: 2023-01-02-4a673e1c-6
+Depends: libc, libubox20220515, libuci20130104, libubus20220601, libnl-tiny1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: data-items
+Version: 1.0-1
+Depends: libc, common, loc-core, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: procd-seccomp
+Version: 2022-06-01-7a009685-5
+Depends: libc, libubox20220515, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qmi-shutdown-modem
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, glib2, diag, configdb, dsutils, common, time-genoff, xmllib, ql-common-tools
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnetfilter-cthelper0
+ABIVersion: 0
+Version: 1.0.0-2
+Depends: libc, libmnl0
+Provides: libnetfilter-cthelper
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qc-bt-daemon
+Version: 3.0-5
+Depends: libc, glib2, libqcmap_client, diag, xmllib, dsutils, qmi, qmi-framework, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libcommon_layer
+Version: 1-1
+Depends: libc, libnetmgr, libporting_layer, diag, qdi, dsi_netctrl, qmi, qmiservices, qmi-framework, dsutils, xmllib, location-qapi, loc-hal
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: engine-plugin-impl-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: librecovery-updater-msm
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: agmplugin
+Version: 1
+Depends: libc, tinyalsa, tinycompress, glib2, agm, sndparser, audio-log-utils, agm-sw-binder-client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-api-iface
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: remotefs
+Version: 1.0-1
+Depends: libc, nand-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qmi
+Version: 1-1
+Depends: libc, diag, qmiservices, qmiidl, libqmi-client-qmux, configdb
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libiwinfo-data
+Version: 2022-12-15-8d158096-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qapi-demo-app
+Version: 1.0-1
+Depends: libc, location-qapi
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: asn1c-crt
+Version: 1.0-1
+Depends: libc, asn1c-rtx
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-login-pam
+Version: 1.0-1
+Depends: libc, glib2, common, ql-syslog, libpam, libmbedtls12, ql-common-tools
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rpcd-mod-luci
+Version: 20210614
+Depends: libc, rpcd, libubox20220515, libubus20220601, libnl-tiny1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: subsystem-ramdump
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: xtwifi-inet-agent
+Version: 1.0-1
+Depends: libc, loc-mq-client, curl, loc-core, loc-qwes-iface
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-slic
+Version: 1.0-1
+Depends: libc, nand-utils, ql-common-tools, ql-syslog, ql-audio
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nf-log
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: csd-server
+Version: 1
+Depends: libc, libhardware, glib2, media-headers, audio-utils, qahw, qahw-api, core-include, hal-pal
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: asn1c-rtx
+Version: 1.0-1
+Depends: libc, glib2, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: urandom-seed
+Version: 3
+Depends: libc, getrandom
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ipset
+Version: 7.15-2
+Depends: libc, kmod-ipt-ipset, libmnl0, libipset13
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: tinyproxy
+Version: 1.10.0-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/tinyproxy 55894918d3c2bbf4a13e46d43f1b0ef76ad38bb4e04511a2549838a24ce8b991
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libexecinfo
+Version: 1.1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-lib-ipc
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, libqmi-client-helper, qmiservices, qmiidl, libqmi-client-qmux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-proto-ppp
+Version: git-21.158.38888-88b9d84
+Depends: libc
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libffi
+Version: 3.4.2-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: asn1c-cper
+Version: 1.0-1
+Depends: libc, asn1c-crt
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: audio-utils
+Version: 1.0-1
+Depends: libc, libcutils, media-headers
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-diag-iface-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ppp
+Version: 2.4.9.git-2021-01-04-3
+Depends: libc, kmod-ppp
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/ppp/chap-secrets 6981fa176a79f8c12be5826c421b16253a616747018ba7e76752a9d36d1d51d4
+ /etc/ppp/filter 579583b318e0cff706ffc134620b42d3fbce8fc31aeb0ad7eea1cc859868e902
+ /etc/ppp/options 01f7358a5528be037dde329a2ecfb7a63382aababf21d4f5bc085f5acef95133
+Installed-Time: 1733796300
+
+Package: luci-mod-admin-full
+Version: git-19.253.48496-3f93650
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-base
+Version: git-23.093.57104-ce20b4a
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua, luci-lib-base, rpcd-mod-file, rpcd-mod-luci, cgi-io
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/luci 60078f7c02ed91d23092c9b75cb9ea5c8ee39f7727def813c8201f8e48a296f4
+ /etc/config/ucitrack f51366117a6456038cfa0d753ff7fe8a9fb5636f561b7bef8718939c6f9a3566
+ /etc/luci-uploads/.placeholder e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: sys-info-cache
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, loc-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: locutil
+Version: 1.0-1
+Depends: libc, glib2, qcom-gps-utils, engine-plugin-api-hdr, engine-plugin-impl-hdr, cdfw-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: wlan-conf
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: logd
+Version: 2021-08-03-205defb5-2
+Depends: libc, libubox20220515, libubus20220601, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qdss_config
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nf-log6
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-log
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ip-bridge
+Version: 6.2.0-4
+Depends: libc, libnl-tiny1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-core
+Version: 1.0-1
+Depends: libc, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: hostapd-daemon
+Version: 1.0-1
+Depends: libc, libnl200, openssl-util, wpa-supplicant-8-lib, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: xtables-legacy
+Version: 1.8.7-7
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libiptext0, libiptext6-0, libxtables12
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ioss
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libmbim
+Version: 1.26.4-1
+Depends: libc, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: librt
+Version: 1.2.3-4
+Depends: libpthread
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libopenssl1.1
+ABIVersion: 1.1
+Version: 1.1.1t-3
+Depends: libc
+Provides: libopenssl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: quectel-slic-daemon
+Version: 1.0-1
+Depends: libc, nand-utils, quectel-features-config, ql-common-tools, quectel-voice-server, ql-slic, ql-syslog, ql-audio
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: wpa-supplicant-qcacld
+Version: 1.0-1
+Depends: libc, libnl-tiny1, openssl-util, wpa-supplicant-8-lib, qmi, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bind-libs
+Version: 9.18.11-1
+Depends: libc, libopenssl1.1, zlib, libpthread, libatomic1, libuv1, libexecinfo, libnghttp2-14
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libblobmsg-json20220515
+ABIVersion: 20220515
+Version: 2022-05-15-d2223ef9-1
+Depends: libc, libjson-c5, libubox20220515
+Provides: libblobmsg-json
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: quectel-voice-server
+Version: 1.0-1
+Depends: libc, nand-utils, qmi, qmi-framework, qmiservices, qmiidl, libqmi-client-qmux, libhardware, acdbdata, media-headers, audio-utils, quectel-features-config, ql-audio, quectel-features-config, ql-syslog, libgpiod
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qmiidl
+Version: 1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libipset13
+ABIVersion: 13
+Version: 7.15-2
+Depends: libc, kmod-ipt-ipset, libmnl0
+Provides: libipset
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-proto-ipv6
+Version: git-21.148.48881-79947af
+Depends: libc
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-eng-hub-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: audio-ftm
+Version: 1
+Depends: libc, common, tinyalsa, glib2, diag, agm
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: monitor-daemon
+Version: 1.0-1
+Depends: libc, nand-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libip6tc2
+ABIVersion: 2
+Version: 1.8.7-7
+Depends: libc
+Provides: libip6tc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: securemsm-noship
+Version: 1.0-1
+Depends: libc, libxml2, qmi-framework, libutils, common, libdrm, libvmmem, libdmabufheap, minkipc, libopenssl1.1, libcutils, curl, libjson-c5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ext4_utils
+Version: 1.0-1
+Depends: libc, libselinux, libsparse, libcutils, libpcre, core-include
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: openwrt-keyring
+Version: 2022-03-25-62471e69-3
+Depends: libc
+Provides: lede-keyring
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qdpr
+Version: 1.0-1
+Depends: libc, glib2, diag, qmi-framework, qmi
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: lbs-core
+Version: 1.0-1
+Depends: libc, qmi-framework, qcom-gps-utils, loc-core, loc-api-v02, loc-base-util, izat-core, izat-core-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-esim
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, curl, dsutils, ql-common-tools, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libnl-core200
+ABIVersion: 200
+Version: 3.5.0-1
+Depends: libc, libpthread
+Provides: libnl-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nf-conntrack-netlink
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nfnetlink, kmod-nf-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: wpa-supplicant-8-lib
+Version: 1.0-1
+Depends: libc, libcutils, libnl200, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libnetmgr
+Version: 1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: engine-plugin-api-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: xtwifi-client
+Version: 1.0-1
+Depends: libc, zlib, asn1c-cper, gdtap-adapter, qmi, libqmi, lowi-client, qcom-gps-utils, loc-core, loc-qwes-iface, izat-api-hdr, data-items, izat-client-api
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libiptext6-0
+ABIVersion: -0
+Version: 1.8.7-7
+Depends: libc, libxtables12
+Provides: libiptext6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: common
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: media-headers
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: acdb
+Version: 1
+Depends: libc, ar-osal, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: adbd
+Version: 1.0-1
+Depends: libc, core-include, liblog, libcutils, libselinux, libmincrypt, libbase, fs_mgr, ext4_utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: jshn
+Version: 2022-05-15-d2223ef9-1
+Depends: libc, libjson-c5, libubox20220515, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: coreutils-od
+Version: 9.0-2
+Depends: libc, coreutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 300:/usr/bin/od:/usr/libexec/od-coreutils
+
+Package: kmod-ipt-core
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-reject, kmod-nf-ipt, kmod-nf-log
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bthost-ipc
+Version: 3.0-1
+Depends: libc, liblog, glib2, fluoride, libhardware
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: wlan-services
+Version: 1.0-1
+Depends: libc, kmod-qcacld32-ll, qti, qmi, libqcmap_lan_client, libqcmap_client, libnl200, libnl-genl200, cld80211-lib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: cdfw-remote-api
+Version: 1.0-1
+Depends: libc, glib2, location-api-iface, qcom-gps-utils, cdfw-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rng-tools
+Version: 6.15-2
+Depends: libc, libopenssl1.1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-batching
+Version: 1.0-1
+Depends: libc, lbs-core-hdr, loc-api-v02, qcom-gps-utils, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ppp
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-lib-crc-ccitt, kmod-slhc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nft-offload
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-flow, kmod-nft-nat
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: QCMAP_Bootup
+Version: 1-1
+Depends: libc, diag, libnetmgr, dsi_netctrl, qdi, libqcmaputils, dsutils, xmllib, qmi, qmiservices, qmi-framework, qmiidl, libpugixml
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ipacm-diag
+Version: 1-1
+Depends: libc, diag, dsutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ep-ref-simulator
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, engine-plugin-api-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: hidl-client
+Version: 3.0-1
+Depends: libc, glib2, liblog, bttransport, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: audio-route
+Version: 1.0-1
+Depends: libc, libexpat, liblog, tinyalsa, core-include
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libopenssl-conf
+Version: 1.1.1t-3
+Depends: libc, libopenssl1.1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/ssl/openssl.cnf 5fa02b889f75a06883776dd8118b3c95a49cf0f4b8789a78d83a3fbfd314b319
+Installed-Time: 1733796300
+
+Package: libncurses6
+ABIVersion: 6
+Version: 6.3-3
+Depends: libc, terminfo
+Provides: libncursesw, libncurses, libncursesw6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: engine-plugin
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, diag, engine-plugin-api-hdr, loc-eng-hub-api-hdr, loc-diag-iface-hdr, ntrip-client-integration-api-hdr, loc-base-util, ntrip-client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: QCMAP_ApInterface
+Version: 1-1
+Depends: libc, diag, libnetmgr, dsi_netctrl, qdi, libqcmaputils, dsutils, xmllib, qmi, qmiservices, qmi-framework, qmiidl, libpugixml
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: quectel-daemon
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, libqmi-client-helper, qmiservices, qmiidl, libqmi-client-qmux, ql-common-tools
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-service
+Version: 1.0-1
+Depends: libc, lbs-core-hdr, location-api, data-items, loc-mq-client, lowi-common-hdr, lowi-client, lbs-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-ipt-ipset
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core, kmod-nfnetlink
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-hal-daemon
+Version: 1.0-1
+Depends: libc, glib2, loc-pla-hdr, qcom-gps-utils, loc-hal, location-api-iface, location-api, location-api-msg-proto
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: QCMAP_ConnectionManager
+Version: 1-1
+Depends: libc, libqcmap_cm, diag, libnetmgr, dsi_netctrl, qdi, libqcmaputils, dsutils, xmllib, qmi, qmiservices, qmi-framework, qmiidl, libpugixml, libexecinfo
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-hal
+Version: 1.0-1
+Depends: libc, loc-core, libxml2, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libsparse
+Version: 1.0-1
+Depends: libc, core-include, zlib
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-generic-sw-bridge
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ats
+Version: 1
+Depends: libc, diag, common, ar-osal, acdb, ar-gsl, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: spf
+Version: 1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libpcap1
+ABIVersion: 1
+Version: 1.10.1-2
+Depends: libc
+Provides: libpcap
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qti
+Version: 1-1
+Depends: libc, diag, dsutils, libqcmaputils, qmiidl, libqmi-client-qmux, qmiservices, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libiwinfo20210430
+ABIVersion: 20210430
+Version: 2022-12-15-8d158096-1
+Depends: libc, libnl-tiny1, libuci20130104, libubus20220601, libiwinfo-data
+Provides: libiwinfo
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-mq-client
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libjson-c5
+ABIVersion: 5
+Version: 0.15-2
+Depends: libc
+Provides: libjson-c
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: uhttpd
+Version: 2022-10-31-23977554-1
+Depends: libc, libubox20220515, libblobmsg-json20220515, libjson-script20220515, libjson-c5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/uhttpd bcf5f1c5e714cdc46e7855da53ba4c427c37735267ea17eebf958f24efd7d247
+Installed-Time: 1733796300
+
+Package: postboot
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: dsi_netctrl
+Version: 1-1
+Depends: libc, libnetmgr, diag, qmiservices, qmiidl, libqmi-client-qmux, libqmi-client-helper, qmi, qmi-framework, configdb, qdi
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nf-conntrack
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: nlp-client-api
+Version: 1.0-1
+Depends: libc, nlp-api-hdr, izat-client-api
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: time-services
+Version: 1.0-1
+Depends: libc, diag, glib2, qmi-framework, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libcurl4
+ABIVersion: 4
+Version: 8.10.0-1
+Depends: libc, libopenssl1.1, libnghttp2-14, ca-bundle
+Provides: libcurl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.7-7
+Depends: libc, libxtables12, kmod-ipt-conntrack-extra, kmod-ipt-raw
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-bt-dlkm
+Version: 5.15+1.0-3
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: usign
+Version: 2020-05-23-f1f65026-1
+Depends: libc, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: lowi-client
+Version: 1.0-1
+Depends: libc, common, loc-mq-client, lowi-common-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ath6kl-utils
+Version: 1.0-1
+Depends: libc, libnl200, libnl-genl200, diag, zlib, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: QCMAP_StaInterface
+Version: 1-1
+Depends: libc, diag, libnetmgr, dsi_netctrl, qdi, libqcmaputils, dsutils, xmllib, qmi, qmiservices, qmi-framework, qmiidl, libpugixml
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: minkipc
+Version: 1.0-1
+Depends: libc, common, libvmmem, libcutils, liblog, qmi-framework, kmod-securemsm-dlkm-kernel
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-dataipa
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libmincrypt
+Version: 1.0-1
+Depends: libc, core-include
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libselinux-getenforce
+Version: 3.3-2
+Depends: libc, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 300:/usr/sbin/getenforce:/usr/sbin/libselinux-getenforce
+
+Package: kmod-securemsm-dlkm-kernel
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: phytool
+Version: 2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: liblua5.1.5
+ABIVersion: 5.1.5
+Version: 5.1.5-10
+Depends: libc
+Provides: liblua
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: zlib
+Version: 1.2.11-6
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: time-genoff
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: izat-core-hdr
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: musl-fts
+Version: 1.2.7-1
+Depends: libc, libpthread
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nf-ipt6
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-ipt, kmod-nf-log6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: gdtap-adapter
+Version: 1.0-1
+Depends: libc, loc-launcher, lbs-core, loc-hal
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: sec-config
+Version: 1.0-1
+Depends: libc, glib2, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: file
+Version: 5.41-1
+Depends: libc, libmagic
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-qcmap-cli
+Version: 1.0-1
+Depends: libc, diag, qmi, qmi-framework, libqmi-client-helper, qmiservices, qmiidl, libqmi-client-qmux, ql-common-tools, xmllib, dsutils, libqcmap_client, libqcmap_lan_client
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: tftp-server
+Version: 1.0-1
+Depends: libc, common, glib2, qmi-framework, libcutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: conntrack
+Version: 1.4.6-3
+Depends: libc, libnetfilter-conntrack3, libnetfilter-cttimeout1, libnetfilter-cthelper0, libnetfilter-queue1
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-lib-nixio
+Version: git-20.234.06894-c4a4e43
+Depends: libc, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-qcacld-ll
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown), kmod-wlan-cnss-legacy
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: edgnss-daemon
+Version: 1.0-1
+Depends: libc, ntrip-client-api, sys-info-cache, pal-net-if, cdfw-remote-api, loc-base-util
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libubox20220515
+ABIVersion: 20220515
+Version: 2022-05-15-d2223ef9-1
+Depends: libc
+Provides: libubox
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: mwan3
+Version: 2.11.4-1
+Depends: libc, ip, ipset, iptables, ip6tables, iptables-mod-conntrack-extra, iptables-mod-ipopt, jshn
+Status: install user installed
+Architecture: all
+Conffiles:
+ /etc/config/mwan3 391fce13910b62ebfdecd4be1230ea06f5d1ede250c24f4aeaecfd7e4d355905
+ /etc/mwan3.user ccc83d99334ff3c345a0de40e6057069ecc32d08ef826c1058e4820a68464d59
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qdssagent
+Version: 1.0-1
+Depends: libc, common, liblog, qmi-framework, glib2, diag
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ca-bundle
+Version: 20211016-1
+Depends: libc
+Provides: ca-certs
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+
+Package: dgnss-remote-api-app
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, cdfw-remote-api
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-app-tinyproxy
+Version: git-23.093.40686-71c51d3
+Depends: libc, luci-compat, tinyproxy
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+
+Package: libbase
+Version: 1.0-1
+Depends: libc, core-include, libcutils, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: liblucihttp-lua
+Version: 2023-03-15-9b5b683f-1
+Depends: libc, liblucihttp0, liblua5.1.5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libuclient20201210
+ABIVersion: 20201210
+Version: 2023-04-13-007d9454-1
+Depends: libc, libubox20220515
+Provides: libuclient
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: fping
+Version: 5.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-mbedtls
+Version: 1.0-1
+Depends: libc, qmi, qmi-framework, diag, dsutils, ql-common-tools, libnl200, dsi_netctrl, ds_atctrl, libmbedtls12
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libcoap_layer
+Version: 1-1
+Depends: libc, diag, dsutils, libporting_layer, libcommon_layer
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libselinux-setfilecon
+Version: 3.3-2
+Depends: libc, libselinux
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libdrm
+Version: 2.4.107-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci-lib-jsonc
+Version: git-22.097.61921-7513345
+Depends: libc, liblua5.1.5, libjson-c5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-ipt-ipopt
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: bind-dig
+Version: 9.18.11-1
+Depends: libc, bind-libs
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: location-geofence
+Version: 1.0-1
+Depends: libc, lbs-core-hdr, lbs-core
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-shortcut-fe
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: luci
+Version: git-23.093.42303-d58cd69
+Depends: libc, luci-proto-ipv6, libiwinfo-lua, luci-app-firewall, luci-app-opkg, luci-mod-admin-full, luci-proto-ppp, luci-theme-bootstrap, rpcd-mod-rrdns, uhttpd, uhttpd-mod-ubus
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+
+Package: ipa_cli
+Version: 1-1
+Depends: libc, libxml2, diag, dsutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: sndparser
+Version: 1
+Depends: libc, glib2, core-include, libexpat
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: kmod-nf-conntrack6
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nf-conntrack
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: cld80211-lib
+Version: 1.0-1
+Depends: libc, libcutils, libnl200, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libgcc1
+ABIVersion: 1
+Version: 11.2.0-4
+Provides: libgcc
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: miniupnpd-iptables
+Version: 2022-08-31-68c8ec50-1
+Depends: libc, libcap-ng, libmnl0, libuuid1, ip6tables, libip6tc2, iptables, libopenssl1.1, libqcmap_client, libstdcpp6, libip4tc2, libnetfilter-conntrack3
+Provides: miniupnpd
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Conffiles:
+ /etc/config/upnpd 2645931c86316c8e46f5f0a6e1e322b2e2fd82cad38be2acca76a8f106892f52
+Installed-Time: 1733796300
+
+Package: libqcmap_cm
+Version: 1-1
+Depends: libc, diag, libnetmgr, dsi_netctrl, qdi, libqcmaputils, dsutils, xmllib, qmi, qmiservices, qmi-framework, qmiidl, libpugixml
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libstdcpp6
+ABIVersion: 6
+Version: 11.2.0-4
+Provides: libstdcpp
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libpugixml
+Version: 1.11.4-2
+Depends: libc, libstdcpp6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: xtra-daemon
+Version: 1.0-1
+Depends: libc, izat-core, sys-info-cache, pal-net-if
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qmi-framework
+Version: 1.0-1
+Depends: libc, libpthread, liblog, libcutils, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: engine-simulator
+Version: 1.0-1
+Depends: libc, qcom-gps-utils, loc-base-util, engine-plugin-api-hdr, engine-plugin-impl-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: agmplugintest
+Version: 1
+Depends: libc, tinyalsa, tinycompress, agm, capiv2-headers
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libcutils
+Version: 1.0-1
+Depends: libc, core-include, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: capiv2-headers
+Version: 1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-glue
+Version: 1.0-1
+Depends: libc, location-service, loc-net-iface
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-datarmnet
+Version: 5.15-1.0
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qmuxbridge
+Version: 1.0-1
+Depends: libc, libcutils, diag, dsutils, libqmi-ip, qmiidl, qmi, qmiservices, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libexpat
+Version: 2.6.2-2
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ubox
+Version: 2021-08-03-205defb5-2
+Depends: libc, libubox20220515, ubusd, ubus, libubus20220601, libuci20130104
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+Alternatives: 100:/sbin/rmmod:/sbin/kmodloader, 100:/sbin/insmod:/sbin/kmodloader, 100:/sbin/lsmod:/sbin/kmodloader, 100:/sbin/modinfo:/sbin/kmodloader, 100:/sbin/modprobe:/sbin/kmodloader
+
+Package: kernel
+Version: 5.15-1-unknown
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libqcmap_lan_client
+Version: 1-1
+Depends: libc, diag, dsutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qcril-nr
+Version: 1.0-1
+Depends: libc, glib2, libxml2, libsqlite3-0, sqlite3-cli, diag, common, liblog, qmi-framework, qmiidl, qmi, libqmi-client-helper, libqmi-client-qmux, qcril-qmi-services, qmiservices, qcril-nr-headers, qcril-data-hal-headers, qcril-data-hal-messages
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libqrtr-glib
+Version: 1.2.2-1
+Depends: libc, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: location-client-api
+Version: 1.0-1
+Depends: libc, glib2, libcutils, loc-pla-hdr, qcom-gps-utils, location-api-msg-proto
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: LwM2M_Client
+Version: 1-1
+Depends: libc, libporting_layer, libcommon_layer, liblwm2m_clnt_ipc, libcoap_layer, location-qapi, loc-hal, qmi, qmiservices, qmi-framework, libqcmaputils, libqmi-ip
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libevent2-7
+ABIVersion: -7
+Version: 2.1.12-1
+Depends: libc
+Provides: libevent2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rpcd-mod-iwinfo
+Version: 2022-12-15-7de4820c-1
+Depends: libiwinfo (>= 2022-12-15), libc, libubus20220601, libubox20220515, rpcd, libiwinfo20210430
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-wlan-cnss-legacy
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: luci-mod-network
+Version: git-23.093.42704-52965f4
+Depends: libc, luci-base, libiwinfo-lua, rpcd-mod-iwinfo
+Status: install user installed
+Architecture: all
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: datafactory
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-nft-core
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6, kmod-nf-nat, kmod-nf-log, kmod-nf-log6, kmod-lib-crc32c
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ssl_demo
+Version: 1-1
+Depends: libc, libporting_layer, libopenssl1.1, securemsm
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: data_path_opt
+Version: 1-1
+Depends: libc, dsutils, diag, libqcmaputils, musl-fts
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libvmmem
+Version: 1.0.0-1
+Depends: libc, libbase, liblog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-audio
+Version: 1.0-1
+Depends: libc, nand-utils, libopenssl1.1, libxml2, libhardware, acdbdata, media-headers, audio-utils, qahw, qahw-api, quectel-features-config, ql-common-tools, ql-syslog
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: nmea-test-app
+Version: 1.0-1
+Depends: libc, qmi-framework, loc-api-v02, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libdmabufheap
+Version: 1.0-1
+Depends: libc, libbase, libion
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libhardware
+Version: 1.0-1
+Depends: libc, libcutils, libutils, liblog, core-include, quectel-features-config
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libatomic1
+ABIVersion: 1
+Version: 11.2.0-4
+Depends: libgcc1
+Provides: libatomic
+Status: install hold installed
+Essential: yes
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: mbim
+Version: 1.0-1
+Depends: libc, glib2, libcutils, diag, libqmi-ip, qmiidl, qmi, qmi-framework, libjson-c5, ubus, libubox20220515, mboem
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnfnetlink0
+ABIVersion: 0
+Version: 1.0.2-1
+Depends: libc
+Provides: libnfnetlink
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-eng-hub
+Version: 1.0-1
+Depends: libc, loc-hal, loc-core, data-items, lbs-core, gnsspps, diag, loc-diag-iface-hdr, locutil, cdfw, loc-qwes-iface, securemsm-noship, securemsm
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: uhttpd-mod-ubus
+Version: 2022-10-31-23977554-1
+Depends: libc, uhttpd, libubus20220601, libblobmsg-json20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libtirpc
+Version: 1.3.2-2
+Depends: libc, libpthread
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: dsi_netctrl_test
+Version: 1-1
+Depends: libc, dsi_netctrl, qmiservices, qmiidl, qmi
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qti_ppp
+Version: 1-1
+Depends: libc, diag, libqcmaputils, qmiservices, qmi-framework
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: msmirqbalance
+Version: 1.0-1
+Depends: libc, common, liblog, glib2, libcutils, libutils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnetfilter-cttimeout1
+ABIVersion: 1
+Version: 1.0.0-2
+Depends: libc, libmnl0
+Provides: libnetfilter-cttimeout
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: jsonfilter
+Version: 2018-02-04-c7e938d6-1
+Depends: libc, libubox20220515, libjson-c5
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libnl-nf200
+ABIVersion: 200
+Version: 3.5.0-1
+Depends: libc, libnl-route200
+Provides: libnl-nf
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qcril-data-hal-messages
+Version: 1.0-1
+Depends: libc, glib2, diag, dsi_netctrl, qcril-nr-headers, qcril-data-hal-headers
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: iperf3
+Version: 3.11-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: daemon-scripts
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: wireless-tools
+Version: 29-6
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: reboot-daemon
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ql-nw-service
+Version: 1.0-1
+Depends: libc, diag, qmi, qmi-framework, ql-common-tools, ql-syslog, ql-lib-utils, ql-lib-ipc, libpugixml, libqcmap_client, libqcmap_lan_client, loc-hal, loc-api-v02
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: loc-base-util
+Version: 1.0-1
+Depends: libc, liblog, glib2, loc-pla-hdr, libopenssl1.1, libsqlite3-0
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libattr
+Version: 2.5.1-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libuv1
+ABIVersion: 1
+Version: 1.41.1-1
+Depends: libc, libpthread, librt
+Provides: libuv
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: binder
+Version: 1.0-1
+Depends: libc, liblog, libcutils, libutils, core-include, libselinux, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libcellular_device_manager
+Version: 1-1
+Depends: libc, diag, dsutils, libqcmap_client, libqcmap_cm, location-client-api
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-net-iface
+Version: 1.0-1
+Depends: libc, libqcmap_client, libqcmap_lan_client, dsutils, qmi, qmi-framework, loc-hal, data-items, loc-api-wds
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: libedit
+Version: 20210522-3.1-1
+Depends: libc, libncurses6
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kpigen
+Version: 1.0-1
+Depends: libc, liblog, libcutils, libutils, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-wlan-cnss2
+Version: 5.15+1.0-1
+Depends: kernel (= 5.15-1-unknown)
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: urngd
+Version: 2020-01-21-c7f7b6b6-1
+Depends: libc, libubox20220515
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-slhc
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-lib-crc-ccitt
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: qcacld-utils
+Version: 1.0-1
+Depends: libc, diag, dsutils, libcutils, libnl200, qmi, qmi-framework, wpa-supplicant-qcacld, kmod-qcacld32-ll
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: lowi-test
+Version: 1.0-1
+Depends: libc, libxml2, loc-launcher, lowi-client, lowi-common-hdr
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: gpr
+Version: 1
+Depends: libc, ar-osal, glib2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ql-syslog
+Version: 1.0-1
+Depends: libc, nand-utils, liblog, libexecinfo
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: usb-composition
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20220515, libubus20220601
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: qcril-data-hal-headers
+Version: 1.0-1
+Depends: libc
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: ip6tables-zz-legacy
+Version: 1.8.7-7
+Depends: libc, kmod-ip6tables, xtables-legacy
+Provides: ip6tables, ip6tables-legacy
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 200:/usr/sbin/ip6tables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-save:/usr/sbin/xtables-legacy-multi
+
+Package: LwM2M_Client_App
+Version: 1-1
+Depends: libc, libporting_layer, liblwm2m_clnt_ipc, location-qapi, loc-hal, LwM2M_Client, qmi, qmiservices, qmi-framework, libqcmaputils, libqmi-ip
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: ppp-mod-pppoe
+Version: 2.4.9.git-2021-01-04-3
+Depends: libc, kmod-pppoe
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnghttp2-14
+ABIVersion: -14
+Version: 1.44.0-1
+Depends: libc
+Provides: libnghttp2
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
+Package: loc-socket
+Version: 1.0-1
+Depends: libc, glib2, libcutils, loc-pla-hdr, qcom-gps-utils
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: kmod-ipt-nat
+Version: 5.15-1
+Depends: kernel (= 5.15-1-unknown), kmod-ipt-core, kmod-nf-nat
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libnl-genl200
+ABIVersion: 200
+Version: 3.5.0-1
+Depends: libc, libnl-core200
+Provides: libnl-genl
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: libporting_layer
+Version: 1-1
+Depends: libc, diag, dsutils, libopenssl1.1, securemsm
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: iptables-zz-legacy
+Version: 1.8.7-7
+Depends: libc, xtables-legacy
+Provides: iptables, iptables-legacy
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Alternatives: 200:/usr/sbin/iptables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-save:/usr/sbin/xtables-legacy-multi
+
+Package: agm-sw-binder-client
+Version: 1
+Depends: libc, libutils, libcutils, binder, glib2, audio-utils, core-include, audio-log-utils, libexpat, agm-sw-binder-server
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+
+Package: core-include
+Version: 1.0-1
+Depends: libc, libcap
+Status: install user installed
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Time: 1733796300
+Auto-Installed: yes
+
