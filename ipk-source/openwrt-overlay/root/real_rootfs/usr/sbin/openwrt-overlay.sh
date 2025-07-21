@@ -34,43 +34,28 @@ newroot() {
         mkdir -p /rootfs/real_rootfs
     fi
 
-    # Pivot root to the new root
     /bin/echo "Pivoting Root / to /rootfs; Be back soon!!"
     /sbin/pivot_root /rootfs /rootfs/real_rootfs >/dev/null 2>&1
 
     # Move the mounted filesystems to the new locations
-    /bin/echo "Moving previous mount points to the new root"
-    /bin/mount --move /real_rootfs/sys /sys
-    /bin/mount --move /real_rootfs/proc /proc
-    /bin/mount --move /real_rootfs/tmp /tmp
-    /bin/mount --move /real_rootfs/dev /dev
-    /bin/mount --move /real_rootfs/firmware /firmware
-    /bin/mount --move /real_rootfs/usrdata /usrdata
-    /bin/mount --move /real_rootfs/persist /persist
-    /bin/mount --move /real_rootfs/cache /cache
-    /bin/mount --move /real_rootfs/data /data
-    /bin/mount --move /real_rootfs/run /run
-    /bin/mount --move /real_rootfs/etc/machine-id /etc/machine-id
-    /bin/mount --move /real_rootfs/var/volatile /var/volatile
-    /bin/mount --move /real_rootfs/systemrw /systemrw
-    
-    # Bind-mount core mountpoints back into real_rootfs for chroot/debug
-    /bin/echo "Binding previous mount points to the old root"
-    /bin/mount --bind /dev /real_rootfs/dev
-    /bin/mount --bind /proc /real_rootfs/proc
-    /bin/mount --bind /sys /real_rootfs/sys
-    /bin/mount --bind /tmp /real_rootfs/tmp
-    /bin/mount --bind /run /real_rootfs/run
-    /bin/mount --bind /firmware /real_rootfs/firmware
-    /bin/mount --bind /persist /real_rootfs/persist
-    /bin/mount --bind /cache /real_rootfs/cache
-    /bin/mount --bind /data /real_rootfs/data
-    /bin/mount --bind /systemrw /real_rootfs/systemrw
-    /bin/mount --bind /usrdata /real_rootfs/usrdata
+    /bin/echo "Setting up final shared mounts"
+    /bin/mount --bind /real_rootfs/sys /sys
+    /bin/mount --bind /real_rootfs/proc /proc
+    /bin/mount --bind /real_rootfs/tmp /tmp
+    /bin/mount --bind /real_rootfs/dev /dev
+    /bin/mount --bind /real_rootfs/firmware /firmware
+    /bin/mount --bind /real_rootfs/usrdata /usrdata
+    /bin/mount --bind /real_rootfs/persist /persist
+    /bin/mount --bind /real_rootfs/cache /cache
+    /bin/mount --bind /real_rootfs/data /data
+    /bin/mount --bind /real_rootfs/run /run
+    /bin/mount --bind /real_rootfs/etc/machine-id /etc/machine-id
+    /bin/mount --bind /real_rootfs/var/volatile /var/volatile
+    /bin/mount --bind /real_rootfs/systemrw /systemrw
     /bin/mount --bind /etc /real_rootfs/etc
-    /bin/mount --bind /etc/machine-id /real_rootfs/etc/machine-id
-    /bin/mount --bind /var/volatile /real_rootfs/var/volatile
     
+    # Final remount of orginal rootfs as RO
+    /bin/mount -o remount,ro /real_rootfs
     echo "Complete"
 }
 
