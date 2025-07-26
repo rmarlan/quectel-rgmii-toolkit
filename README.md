@@ -1,13 +1,28 @@
-# RC PCIe Toolkit
-Software deployment Toolkit for Quectel RM5xxx series 5G modems utilizing an m.2 to RJ45 adapter (RC PCIe)
-
-Example: https://rework.network/collections/lte-home-gateway/products/5g2phy
-
 Current Branch: **SDXPINN**
 
-YouTube Video: [Watch](https://www.youtube.com/watch?v=dh7dbEyHwiY)
+> :warning: If you wish to contribute, please PR to **development-SDXPINN**  
+>:checkered_flag: Hint: Start by checking out the ipk-source directory, each package is broken down into its contents. Inside, root represents the structure copied starting at / and control includes metadata and scripts to be ran before and after installation. The build-ipk.sh will produce an ipk based on the control and root directories next to it.
 
-This is a work in progress branch for early development for the RM551E-GL modem (Will probably work on the 550 as well)
+# SDXPINN OpenWRT Repository
+
+This branch of the repository serves as both an opkg source and feed for the custom packages I make available for Quectel cellular modules with the SDXPINN system. This source is preloaded into my custom firmware for the RM551E-GL found here: https://mega.nz/file/GUkk0RpD#7JsFymzKBBKplxLs5tqc5-m7rBmrB2QPfTfMtf1ZQ4g
+
+Flash with QFlash, QFIL, or qfirehose. At first boot a script will automaticly set the module to PCIe RC mode and USB ECM mode then reboot so wait for that reboot after flash to proceed. From there either by Ethernet or USB ECM visit http://192.168.224.1/ or ssh root@192.168.224.1 Password: iamromulan
+
+> :warning: Custom firmware is only available for the RM551E-GL for now. An RM550V-GLAA firmware will be available soon. 
+
+[![IndoorBuild](https://img.youtube.com/vi/SdNEyDfTIKk/0.jpg)](https://www.youtube.com/watch?v=SdNEyDfTIKk)
+[Watch on YouTube](https://www.youtube.com/watch?v=SdNEyDfTIKk)
+
+
+
+# :warning: Known issues with Packages
+
+Currently there is know vulnerability with QuecManager that allows cgi scripts to be executed unauthenticated. It is not recommended to expose uhttpd to the public internet, and to only used in a controlled, trusted local environment for now. Please see [Issue #175](https://github.com/iamromulan/quectel-rgmii-toolkit/issues/175) for more info.
+# RC PCIe Toolkit
+If you prefer starting from factory firmware you may use the toolkit script here to deploy my repo and other fixes via adb. It has been a while since I last visited this deployment script so open an issue if you see something wrong. See the wiki for info on adb.
+
+Software deployment Toolkit for Quectel RM5xxx series 5G modems utilizing an m.2 to RJ45 adapter (RC PCIe)
 
 # The below commands will download the toolkit for RM55x modems/SDXPINN platform
 
