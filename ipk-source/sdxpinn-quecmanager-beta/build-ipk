@@ -50,6 +50,11 @@ echo "Setting ownership for all package files..."
 chown -R root:root "${build_path}/CONTROL"/*
 chown -R root:root "${build_path}/root"/*
 
+# Set +x permissions for CGI scripts that match *.sh in the cgi-bin directory
+# (this was tested and works on OpenWRT/SDXPINN platform)
+# This may be a better solution than using chmod -R ... `find "${build_path}/root/www/cgi-bin" -type f -name "*.sh" -exec chmod 755 {} \;`
+chmod -R 755 "${build_path}/root/www/cgi-bin/**/*.sh"
+
 # Create control.tar.gz from the CONTROL directory
 echo "Creating control.tar.gz..."
 tar -czvf control.tar.gz -C "${build_path}/CONTROL" .
