@@ -1,5 +1,5 @@
 Package: tailscale
-Version: 1.78.1-2
+Version: 1.86.2
 Depends: libc, tailscaled
 Source: feeds/packages/net/tailscale
 SourceName: tailscale
