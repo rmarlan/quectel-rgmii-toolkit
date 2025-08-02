@@ -1,0 +1,6 @@
+Package: sdxpinn-patch
+Version: 2.5
+Architecture: all
+Maintainer: Cameron Thompson iamromulan@github.com
+Source: github.com/iamromulan
+Description: A general first system patch for SDXPINN OpenWRT
