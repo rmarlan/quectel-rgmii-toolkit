@@ -206,15 +206,15 @@ License: GPLv3
 
 
 Package: sdxpinn-quecmanager-beta
-Version: 2.2.4
+Version: 2.2.5
 Depends: sdxpinn-mount-fix, sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager
 Section: admin
 Architecture: aarch64_cortex-a53
 Maintainer: Russel Yasol <https://github.com/dr-dolomite> Cameron Thompson <https://github.com/iamromulan>
-MD5Sum: ef4a375f0d15446e086215b6b4c9dfa9
-Size: 2343652
-Filename: sdxpinn-quecmanager-beta_2.2.4_aarch64_cortex-a53.ipk
+MD5Sum: c7c1d2e15534639282437bc737128397
+Size: 1062406
+Filename: sdxpinn-quecmanager-beta_2.2.5_aarch64_cortex-a53.ipk
 Source: github/iamromulan
 Description: BETA: A custom web UI desgined to run alongside luci for Quectel RM55x modems
 License: GPLv3
@@ -247,28 +247,28 @@ Description:  Sets up a tty from SMD11
 
 
 Package: tailscale
-Version: 1.78.1-2
+Version: 1.86.2
 Depends: libc, tailscaled
 Section: net
 Architecture: aarch64_cortex-a53
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-MD5Sum: baa4d97ba49aa42ef104accba2dc2fd8
-Size: 9882856
-Filename: tailscale_1.78.1-2_aarch64_cortex-a53.ipk
+MD5Sum: 4164fbd218c720bf9138d5b7b5f146c8
+Size: 10768011
+Filename: tailscale_1.86.2_aarch64_cortex-a53.ipk
 Source: feeds/packages/net/tailscale
 Description: It creates a secure network between your servers, computers, and cloud instances. Even when separated by firewalls or subnets. Updated by iamromulan to 1.76.1
 License: GPLv3
 
 
 Package: tailscaled
-Version: 1.78.1-4
+Version: 1.86.2
 Depends: libc, ca-bundle, kmod-tun
 Section: net
 Architecture: aarch64_cortex-a53
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-MD5Sum: 647b4d3c6e51f700dd96362f92f20b54
-Size: 17960998
-Filename: tailscaled_1.78.1-4_aarch64_cortex-a53.ipk
+MD5Sum: 72b24f4d914471b91e6806b7cd53c306
+Size: 19343231
+Filename: tailscaled_1.86.2_aarch64_cortex-a53.ipk
 Source: feeds/packages/net/tailscale
 Description: It creates a secure network between your servers, computers, and cloud instances. Even when separated by firewalls or subnets. Updated by iamromulan to 1.76.1
 License: GPLv3
