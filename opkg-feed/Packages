@@ -234,14 +234,14 @@ Description:  SMS Tool for 3G/4G/5G modem
 
 
 Package: socat-at-bridge
-Version: 1.1.1
+Version: 1.2.0
 Depends: libc, socat
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan
-MD5Sum: a5f4c4c371426fbe12bf2345938af195
-Size: 1795
-Filename: socat-at-bridge_1.1.1_aarch64_cortex-a53.ipk
+MD5Sum: 1b1c28fb79c0cf477eb4e5c77350386a
+Size: 1470
+Filename: socat-at-bridge_1.2.0_aarch64_cortex-a53.ipk
 Source: https://github.com/iamromulan/quectel-rgmii-toolkit
 Description:  Sets up a tty from SMD11
 
