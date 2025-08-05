@@ -239,8 +239,8 @@ Depends: libc, socat
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan
-MD5Sum: 1b1c28fb79c0cf477eb4e5c77350386a
-Size: 1470
+MD5Sum: 390c8573fd9f9550793e704a7442bb8f
+Size: 1445
 Filename: socat-at-bridge_1.2.0_aarch64_cortex-a53.ipk
 Source: https://github.com/iamromulan/quectel-rgmii-toolkit
 Description:  Sets up a tty from SMD11
