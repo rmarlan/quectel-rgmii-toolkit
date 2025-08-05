@@ -239,7 +239,7 @@ Depends: libc, socat
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan
-MD5Sum: 390c8573fd9f9550793e704a7442bb8f
+MD5Sum: eccb5b567c5fd7969ebedbef3c6fdebb
 Size: 1445
 Filename: socat-at-bridge_1.2.0_aarch64_cortex-a53.ipk
 Source: https://github.com/iamromulan/quectel-rgmii-toolkit
