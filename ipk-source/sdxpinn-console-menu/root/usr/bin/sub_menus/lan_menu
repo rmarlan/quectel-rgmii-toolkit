@@ -30,7 +30,8 @@ is_ippt_enabled() {
     echo "$mpdn_output"
     
     # Check if any MPDN rule has IPPT enabled (non-zero second-to-last value)
-    if echo "$mpdn_output" | grep -q "+QMAP: \"MPDN_rule\",.*,.*,.*,[1-9],.*"; then
+    # The expected format is: +QMAP: "MPDN_rule",<rule_id>,<pdp_id>,<vlan>,<ippt>,<auto-connect>
+    if echo "$mpdn_output" | grep -q "+QMAP: \"MPDN_rule\",.*,[1-9].*,.*,[1-9],[1-9]"; then
         return 0  # IPPT is enabled
     else
         return 1  # IPPT is not enabled
@@ -208,8 +209,13 @@ toggle_custom_dns() {
 
     get_current_settings "$interface"
     local dns=$(prompt "Enter DNS servers (comma-separated)" "$CURRENT_DNS")
-    uci set dhcp.$interface.dhcp_option="6,$dns"
-    apply_changes
+    if uci get dhcp.$interface.dhcp_option &>/dev/null; then
+        echo -e "\e[93mSetting DNS to: $dns\e[0m" # Yellow
+        uci set dhcp.$interface.dhcp_option="6,$dns"
+        apply_changes
+    else
+        echo -e "\e[91m$interface DHCP_Option Setting not found with UCI. Not setting. \e[0m" # Red
+    fi
 }
 
 # Function to use the provider's DNS (IPv4 only)
