@@ -209,6 +209,8 @@ toggle_custom_dns() {
 
     get_current_settings "$interface"
     local dns=$(prompt "Enter DNS servers (comma-separated)" "$CURRENT_DNS")
+
+    # @Cameron if uci set properties does not exist will uci create it?
     if uci get dhcp.$interface.dhcp_option &>/dev/null; then
         echo -e "\e[93mSetting DNS to: $dns\e[0m" # Yellow
         uci set dhcp.$interface.dhcp_option="6,$dns"
