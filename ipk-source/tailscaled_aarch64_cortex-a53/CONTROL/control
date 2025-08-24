@@ -1,5 +1,5 @@
 Package: tailscaled
-Version: 1.86.2
+Version: 1.86.2-1
 Depends: libc, ca-bundle, kmod-tun
 Source: feeds/packages/net/tailscale
 SourceName: tailscaled
