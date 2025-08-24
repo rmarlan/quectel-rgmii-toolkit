@@ -150,14 +150,14 @@ License: GPLv3
 
 
 Package: sdxpinn-console-menu
-Version: 0.0.2
+Version: 0.0.3
 Depends: libc, sdxpinn-mount-fix
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan <https://github.com/iamromulan>
-MD5Sum: de75d2889510e92b57fc8a7ca087ced4
-Size: 7361
-Filename: sdxpinn-console-menu_0.0.2_aarch64_cortex-a53.ipk
+MD5Sum: 3f50efc2ece98cdb2d480f76785f12fa
+Size: 7512
+Filename: sdxpinn-console-menu_0.0.3_aarch64_cortex-a53.ipk
 Source: github/iamromulan
 Description: A custom CLI menu system for mamnagment of Quectel RM5xx modems
 License: GPLv3
@@ -206,15 +206,15 @@ License: GPLv3
 
 
 Package: sdxpinn-quecmanager-beta
-Version: 2.2.7
+Version: 2.2.8
 Depends: sdxpinn-mount-fix, sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager
 Section: admin
 Architecture: aarch64_cortex-a53
 Maintainer: Russel Yasol <https://github.com/dr-dolomite> Cameron Thompson <https://github.com/iamromulan>
-MD5Sum: 3341374dbc94154676c960bd86b170a1
-Size: 1118841
-Filename: sdxpinn-quecmanager-beta_2.2.7_aarch64_cortex-a53.ipk
+MD5Sum: 3ef88e054f4a7d3f789a2bd2a9d33095
+Size: 1159120
+Filename: sdxpinn-quecmanager-beta_2.2.8_aarch64_cortex-a53.ipk
 Source: github/iamromulan
 Description: BETA: A custom web UI desgined to run alongside luci for Quectel RM55x modems
 License: GPLv3
