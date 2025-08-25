@@ -200,6 +200,8 @@ start_instance() {
 	procd_set_param command $PROGD $ARGS
 
 	procd_set_param env TS_DEBUG_FIREWALL_MODE="$fw_mode"
+	procd_set_param env GOGC=50
+	procd_set_param env GOMEMLIMIT=110MiB
  	
 	procd_set_param respawn
 	procd_set_param stdout "$std_out"
