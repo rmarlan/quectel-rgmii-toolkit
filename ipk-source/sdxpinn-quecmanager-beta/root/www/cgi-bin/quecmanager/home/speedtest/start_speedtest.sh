@@ -62,7 +62,7 @@ chmod 644 "$STATUS_FILE"
     echo "Starting speedtest at $(date)" > "$LOG_FILE"
     
     # Run speedtest with timeout and error handling
-    timeout "$TIMEOUT" speedtest --accept-license --format=json --progress=yes --progress-update-interval=500ms 2>>"$LOG_FILE" | \
+    timeout "$TIMEOUT" speedtest --accept-license --accept-gdpr --format=json --progress=yes --progress-update-interval=500ms 2>>"$LOG_FILE" | \
     while IFS= read -r line; do
         # Validate JSON before writing
         if echo "$line" | grep -q '^{.*}$'; then
