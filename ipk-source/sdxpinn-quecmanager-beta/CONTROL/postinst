@@ -16,8 +16,5 @@ service quecprofiles start
 service quecwatch enable
 service quecwatch start
 
-service quecmanager_logging enable
-service quecmanager_logging start
-
 exit 0
 

@@ -1,4 +1,4 @@
-Starting package analysis - Tue Aug 26 09:59:03 PM EDT 2025
+Starting package analysis - Sun Aug 24 06:54:49 PM EDT 2025
 No update needed for atinout (version 0.9.1, MD5: 444eb87488bad1927b6ed069dedf7393, size: 4323)
 No update needed for kmod-wireguard (version 1, MD5: 98e77b68c2f1b5ff46ef7713b4f63a94, size: 789)
 No update needed for libucode20230711 (version 2024.07.22~b610860d-r3, MD5: c38bd45a6aa14a969b7e92f051481d7e, size: 79358)
@@ -14,7 +14,7 @@ No update needed for sdxpinn-mount-fix (version 1.3.2, MD5: 004d4f1c792efc2d32c2
 No update needed for sdxpinn-patch (version 2.5, MD5: 0ec65238142dad95de1666b01a6f09c6, size: 3054)
 No update needed for sdxpinn-quecmanager (version 2.2.3, MD5: e84d70a73cbf372cc9ed611ee0daa625, size: 2060884)
 Updating package info for sdxpinn-quecmanager-beta...
-Updated sdxpinn-quecmanager-beta to version 2.3.0 with MD5: 0ef29ad2c2f21a0e9fcaef1161e495e2 and size: 1184645
+Updated sdxpinn-quecmanager-beta to version 2.2.8 with MD5: 01e722c28268ebe0361906655e8ed160 and size: 1175262
 No update needed for sms-tool (version 2025.1.19-APmod-iamromulan, MD5: 83dc8bfd2d4ac8d8952a2a95b2be943f, size: 13687)
 No update needed for socat-at-bridge (version 1.2.0, MD5: eccb5b567c5fd7969ebedbef3c6fdebb, size: 1445)
 No update needed for tailscale (version 1.86.2, MD5: 4164fbd218c720bf9138d5b7b5f146c8, size: 10768011)
@@ -23,4 +23,4 @@ No update needed for ucode-mod-lua (version 1, MD5: cd83c6848867112332d1155b4c4f
 No update needed for warp (version 1.0, MD5: ea95658bf84f619cabe5dd62280fe787, size: 2698)
 No update needed for wgcf (version 2.2.24, MD5: b2ba181f9181c2bd8f37933c60c0713f, size: 3677883)
 Package file and signature updated successfully.
-Package analysis completed - Tue Aug 26 09:59:03 PM EDT 2025
+Package analysis completed - Sun Aug 24 06:54:50 PM EDT 2025
