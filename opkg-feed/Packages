@@ -307,8 +307,8 @@ Version: 1.14.0
 Depends: libc
 Architecture: aarch64_cortex-a53
 Maintainer: Vitaly Shukela https://github.com/vi/websocat
-MD5Sum: 3a83a2b61a2fc779e5e9d1e0d017fc23
-Size: 3066948
+MD5Sum: e877135ca393c19a17ee81966d88ec38
+Size: 3067044
 Filename: websocat_1.14.0_aarch64_cortex-a53.ipk
 Source: https://github.com/vi/websocat/releases/download/v1.14.0/websocat_max.aarch64-unknown-linux-musl
 Description: Netcat, curl and socat for WebSockets.
