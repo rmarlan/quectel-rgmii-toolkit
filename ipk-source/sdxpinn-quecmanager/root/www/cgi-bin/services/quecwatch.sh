@@ -3,6 +3,9 @@
 # QuecWatch Daemon
 # Monitors cellular connectivity and performs recovery actions
 
+# Load centralized logging
+. /www/cgi-bin/services/quecmanager_logger.sh
+
 # Load UCI configuration functions
 . /lib/functions.sh
 
@@ -17,6 +20,7 @@ RETRY_COUNT_FILE="/tmp/quecwatch_retry_count"
 UCI_CONFIG="quecmanager"
 MAX_TOKEN_WAIT=10  # Maximum seconds to wait for token acquisition
 TOKEN_PRIORITY=15  # Medium priority (between profiles and metrics)
+SCRIPT_NAME_LOG="quecwatch"
 
 # Ensure directories exist
 mkdir -p "$LOG_DIR" "$QUEUE_DIR"
@@ -25,17 +29,33 @@ mkdir -p "$LOG_DIR" "$QUEUE_DIR"
 echo "$$" > "$PID_FILE"
 chmod 644 "$PID_FILE"
 
-# Function to log messages
+# Function to log messages - now uses centralized logging
 log_message() {
     local level="${2:-info}"
     local message="$1"
     local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
     
-    # Log to file
-    echo "[$timestamp] [$level] $message" >> "$LOG_FILE"
+    # Use centralized logging
+    case "$level" in
+        "error")
+            qm_log_error "service" "$SCRIPT_NAME_LOG" "$message"
+            ;;
+        "warn")
+            qm_log_warn "service" "$SCRIPT_NAME_LOG" "$message"
+            ;;
+        "debug")
+            qm_log_debug "service" "$SCRIPT_NAME_LOG" "$message"
+            ;;
+        *)
+            qm_log_info "service" "$SCRIPT_NAME_LOG" "$message"
+            ;;
+    esac
     
-    # Log to system log
+    # Also maintain system logging for compatibility
     logger -t quecwatch -p "daemon.$level" "$message"
+    
+    # Log to file (maintain existing behavior)
+    echo "[$timestamp] [$level] $message" >> "$LOG_FILE"
 }
 
 # Function to update status
