@@ -155,8 +155,8 @@ Depends: libc, sdxpinn-mount-fix
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan <https://github.com/iamromulan>
-MD5Sum: 3f50efc2ece98cdb2d480f76785f12fa
-Size: 7512
+MD5Sum: a2eb562bf9cdb731c3f64ded26d9df99
+Size: 7511
 Filename: sdxpinn-console-menu_0.0.3_aarch64_cortex-a53.ipk
 Source: github/iamromulan
 Description: A custom CLI menu system for mamnagment of Quectel RM5xx modems
