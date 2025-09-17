@@ -1,0 +1,145 @@
+#!/bin/sh /etc/rc.common
+
+START=03
+
+LOG_FILE="/tmp/mount-fix.log"
+
+start() {
+    # Initialize log
+    rm -f "$LOG_FILE" >/dev/null 2>&1
+    touch "$LOG_FILE"
+
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+
+    echo "Begin mount fix process to make a usable userspace."
+        handle_new_firmware
+}
+
+
+
+handle_new_firmware() {
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    /bin/echo "Begin mount fix process to make a usable userspace"
+
+    # Forcefully unmount /etc
+    /bin/echo "Unmounting the 2 mounts over /etc"
+    /bin/umount -lf /etc >/dev/null 2>&1
+
+    # Remount root filesystem as read-write
+    /bin/echo "Remounting / as read-write"
+    /bin/mount -o remount,rw /
+
+
+    # Ensure necessary directories exist for overlay and pivot_root
+    /bin/echo "Creating new overlay system"
+    if [ ! -d /usrdata/rootfs ]; then
+        mkdir -p /usrdata/rootfs
+    fi
+    if [ ! -d /usrdata/rootfs-workdir ]; then
+        mkdir -p /usrdata/rootfs-workdir
+    fi
+    if [ ! -d /rootfs ]; then
+        mkdir -p /rootfs
+    fi
+
+    # Mount the new overlay filesystem
+    /bin/mount -t overlay overlay -o lowerdir=/,upperdir=/usrdata/rootfs,workdir=/usrdata/rootfs-workdir /rootfs
+
+    # Create the real_rootfs directory in the new root
+    if [ ! -d /rootfs/real_rootfs ]; then
+        mkdir -p /rootfs/real_rootfs
+    fi
+
+    # Pivot root to the new root
+    /bin/echo "Pivoting Root / to /rootfs; Be back soon!!"
+    /sbin/pivot_root /rootfs /rootfs/real_rootfs >/dev/null 2>&1
+
+    # Move the mounted filesystems to the new locations
+    /bin/mount --move /real_rootfs/sys /sys
+    /bin/mount --move /real_rootfs/proc /proc
+    /bin/mount --move /real_rootfs/tmp /tmp
+    /bin/mount --move /real_rootfs/dev /dev
+    /bin/mount --move /real_rootfs/firmware /firmware
+    /bin/mount --move /real_rootfs/usrdata /usrdata
+    /bin/mount --move /real_rootfs/data /data
+    /bin/mount --move /real_rootfs/cache /cache
+    /bin/mount --move /real_rootfs/systemrw /systemrw
+    /bin/mount --move /real_rootfs/persist /persist
+    
+    # Bind the orignal rc.d back
+    /bin/mount -o bind,rw /real_rootfs/etc/rc.d /etc/rc.d
+
+    # Final logs and remount the original root as read-only
+    /bin/echo "...and we're back! The original root now lives at /real_rootfs"
+    /bin/echo "Lets mount it as read-only for now, If you need it just remount it as read-write"
+    /bin/mount -o remount,ro /real_rootfs >/dev/null 2>&1
+    /bin/echo "Overlay and pivot_root setup completed"
+
+}
+
+stop() {
+    # Initialize log
+    rm -f "$LOG_FILE" >/dev/null 2>&1
+    touch "$LOG_FILE"
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    
+    # Check if /real_rootfs exists
+    if [ ! -d "/real_rootfs" ]; then
+        echo "Error: /real_rootfs does not exist. Cannot proceed with stop." >> "$LOG_FILE"
+        return 1
+    fi
+
+    # Determine firmware version based on mounts
+    if [ -d "/usrdata" ] && [ -d "/systemrw" ]; then
+        echo "New firmware scenario detected (with /usrdata and /systemrw)." >> "$LOG_FILE"
+        stop_handle_new_firmware
+    else
+        echo "Old firmware scenario detected (without /usrdata and /systemrw)." >> "$LOG_FILE"
+        stop_handle_old_firmware
+    fi
+}
+
+stop_handle_new_firmware() {
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    /bin/echo "Stopping and reverting overlay and pivot_root"
+    
+    # Unmount /etc/rc.d bind
+    /bin/umount -lf /etc/rc.d
+    
+    # Remount the original root filesystem as read-write
+    /bin/mount -o remount,rw /real_rootfs
+
+    # Move the mounted filesystems back to the original locations
+    /bin/mount --move /sys /real_rootfs/sys
+    /bin/mount --move /proc /real_rootfs/proc
+    /bin/mount --move /tmp /real_rootfs/tmp
+    /bin/mount --move /dev /real_rootfs/dev
+    /bin/mount --move /firmware /real_rootfs/firmware
+    /bin/mount --move /usrdata /real_rootfs/usrdata
+    /bin/mount --move /data /real_rootfs/data
+    /bin/mount --move /cache /real_rootfs/cache
+    /bin/mount --move /systemrw /real_rootfs/systemrw
+    /bin/mount --move /persist /real_rootfs/persist
+
+    # Pivot root back to the original root
+    /sbin/pivot_root /real_rootfs /real_rootfs/rootfs
+
+    /bin/echo "Reverted pivot_root"
+	
+	# Unmount /rootfs overlay
+	/bin/umount -lf /rootfs >/dev/null 2>&1
+	
+	# Mount layer 2 /etc back
+    /bin/mount --bind /usrdata/etc /etc
+
+}
+
+restart() {
+    /bin/echo "This script should only be executed once at boot"
+    /bin/echo "Use Stop to undo the pivot"
+	/bin/echo "Use Start to put it back"
+}
