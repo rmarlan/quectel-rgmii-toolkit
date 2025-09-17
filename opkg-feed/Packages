@@ -151,7 +151,7 @@ License: GPLv3
 
 Package: sdxpinn-console-menu
 Version: 0.0.3
-Depends: libc, sdxpinn-mount-fix
+Depends: libc
 Section: utils
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan <https://github.com/iamromulan>
