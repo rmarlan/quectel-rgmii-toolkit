@@ -92,14 +92,7 @@ stop() {
         return 1
     fi
 
-    # Determine firmware version based on mounts
-    if [ -d "/usrdata" ] && [ -d "/systemrw" ]; then
-        echo "New firmware scenario detected (with /usrdata and /systemrw)." >> "$LOG_FILE"
         stop_handle_new_firmware
-    else
-        echo "Old firmware scenario detected (without /usrdata and /systemrw)." >> "$LOG_FILE"
-        stop_handle_old_firmware
-    fi
 }
 
 stop_handle_new_firmware() {
