@@ -41,7 +41,7 @@ prep_sysfs() {
     	echo -e "\e[92m"
 	echo "iamromulan's ipk/opkg repo added!"
     	echo "Installing basic packages..."
-	opkg install atinout luci-app-atinout-mod mc-skins sdxpinn-console-menu luci-app-ttyd
+	opkg install atinout luci-app-atinout-mod mc-skins sdxpinn-console-menu luci-app-ttyd kmod-wireguard
     	echo "Patching default Quectel login binary..."
         echo -e "\e[0m"
 	# Get rid of the Quectel Login Binary
