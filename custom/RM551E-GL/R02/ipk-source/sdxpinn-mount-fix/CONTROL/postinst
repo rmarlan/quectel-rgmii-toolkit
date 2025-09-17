@@ -16,6 +16,7 @@ if grep -qs '/usrdata' /proc/mounts; then
 fi
 
 service mount-fix start
+service mount-fix-final start
 service mount-fix enable
 service mount-fix-final enable
 
