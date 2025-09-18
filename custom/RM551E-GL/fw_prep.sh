@@ -23,7 +23,7 @@ prep_sysfs() {
 	remount_rw
 	#umount -lf /etc
 	umount -lf /etc
-	umount -lf /data
+	#umount -lf /data
 	#rm -rf /usrdata/etc
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
