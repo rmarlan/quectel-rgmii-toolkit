@@ -1,0 +1,143 @@
+#!/bin/ash
+
+LOG_FILE="/tmp/pre-mount-fixinst.log"
+# Initialize log
+rm -f "$LOG_FILE" >/dev/null 2>&1
+touch "$LOG_FILE"
+# Redirect all output (stdout and stderr) to the log file
+exec >>"$LOG_FILE" 2>&1
+
+mount_factory() {
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    
+    # Check if /real_rootfs exists
+    if [ ! -d "/real_rootfs" ]; then
+        echo "Error: /real_rootfs does not exist. Cannot proceed with stop." >> "$LOG_FILE"
+        return 1
+    fi
+
+    # Determine firmware version based on mounts
+    if [ -d "/usrdata" ] && [ -d "/systemrw" ]; then
+        echo "New firmware scenario detected (with /usrdata and /systemrw)." >> "$LOG_FILE"
+        stop_handle_new_firmware
+    else
+        echo "Old firmware scenario detected (without /usrdata and /systemrw)." >> "$LOG_FILE"
+        stop_handle_old_firmware
+    fi
+}
+
+stop_handle_new_firmware() {
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    /bin/echo "Stopping and reverting overlay and pivot_root"
+    service init-overlay-watchdog stop
+    service init-overlay-watchdog disable
+    # Unmount /etc/rc.d bind
+    /bin/umount -lf /etc/rc.d
+    # Remount the original root filesystem as read-write
+    /bin/mount -o remount,rw /real_rootfs
+
+    # Move the mounted filesystems back to the original locations
+    /bin/mount --move /sys /real_rootfs/sys
+    /bin/mount --move /proc /real_rootfs/proc
+    /bin/mount --move /tmp /real_rootfs/tmp
+    /bin/mount --move /dev /real_rootfs/dev
+    /bin/mount --move /firmware /real_rootfs/firmware
+    /bin/mount --move /usrdata /real_rootfs/usrdata
+    /bin/mount --move /data /real_rootfs/data
+    /bin/mount --move /cache /real_rootfs/cache
+    /bin/mount --move /systemrw /real_rootfs/systemrw
+    /bin/mount --move /persist /real_rootfs/persist
+
+    # Pivot root back to the original root
+    /sbin/pivot_root /real_rootfs /real_rootfs/rootfs
+
+    /bin/echo "Reverted pivot_root"
+	
+	# Unmount /rootfs overlay
+	/bin/umount -lf /rootfs >/dev/null 2>&1
+    service init-overlay-watchdog disable
+	
+	# Mount layer 2 /etc back
+    /bin/mount --bind /usrdata/etc /etc
+    service init-overlay-watchdog disable
+
+    # Mount layer 3 /etc back
+    /bin/mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/overlay-work/etc-upper,workdir=/usrdata/overlay-work/.etc-work /etc
+    service init-overlay-watchdog disable
+	df -h
+	echo -e "\e[31m / is read-write right now. Be careful\e[0m"
+	echo -e "\e[31m Reboot or run mount -o remount,ro / \e[0m"
+}
+
+stop_handle_old_firmware() {
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    /bin/echo "Stopping and reverting overlay and pivot_root" 
+    service init-overlay-watchdog stop
+    service init-overlay-watchdog disable
+    # Unmount /etc/rc.d bind
+    /bin/umount -lf /etc/rc.d
+
+    # Remount the original root filesystem as read-write
+    /bin/mount -o remount,rw /real_rootfs
+
+    # Move the mounted filesystems back to the original locations
+    /bin/mount --move /sys /real_rootfs/sys 
+    /bin/mount --move /proc /real_rootfs/proc 
+    /bin/mount --move /tmp /real_rootfs/tmp 
+    /bin/mount --move /dev /real_rootfs/dev 
+    /bin/mount --move /firmware /real_rootfs/firmware 
+    /bin/mount --move /persist /real_rootfs/persist 
+    /bin/mount --move /cache /real_rootfs/cache 
+    /bin/mount --move /data /real_rootfs/data 
+
+    # Pivot root back to the original root
+    /sbin/pivot_root /real_rootfs /real_rootfs/rootfs 
+
+    /bin/echo "Reverted pivot_root"
+	
+	# Unmount /rootfs overlay
+	/bin/umount -lf /rootfs >/dev/null 2>&1
+	
+	# Mount the location of etc-upper back
+	mount -t ubifs /dev/ubi0_3 /overlay
+	
+	# Mount the old overlay filesystem back for etc
+    /bin/mount -t overlay overlay -o lowerdir=/etc,upperdir=/overlay/etc-upper,workdir=/overlay/.etc-work /etc 
+	
+	echo -e "\e[31m / is read-write right now. Be careful\e[0m"
+	echo -e "\e[31m Reboot or run mount -o remount,ro / \e[0m"
+}
+
+
+if grep -qs '/real_rootfs' /proc/mounts; then
+    echo "Upgrade scenario detected."
+    mount_factory
+    service mount-fix disable
+    echo "Filesystem structure returned to Quectel Stock"
+    echo "Backup exists at /usrdata/rootfs or /data/rootfs"
+fi
+
+# Remount original rootfs as read-write 
+echo "Mounting / as read-write"
+mount -o remount,rw /
+
+# Check if /etc is mounted
+if grep -qs '/etc' /proc/mounts; then
+    echo "Unmounting /etc..."
+    umount -lf /etc
+fi
+
+# Check if /usrdata is mounted
+if grep -qs '/usrdata' /proc/mounts; then
+    echo "/usrdata is mounted. Unmounting /etc again to access rootfs /etc..."
+    umount -lf /etc
+fi
+
+echo "Preinst complete...."
+echo "View Results here:..."
+mount
+
+exit 0
