@@ -21,10 +21,10 @@ remount_ro() {
 
 prep_sysfs() {
 	remount_rw
-#	umount -lf /etc
+	#umount -lf /etc
 	umount -lf /etc
 	umount -lf /data
-	rm -rf /usrdata/etc
+	#rm -rf /usrdata/etc
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
     	/bin/echo "Lets be sure your opkg config isn't using the old overlay"
@@ -74,8 +74,9 @@ prep_sysfs() {
     	opkg install ./sdxpinn-firstboot_1.0_sdxpinn.ipk
     	
     	# Install mount-fix
-    	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	opkg install ./sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	#curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	#opkg install ./sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	opkg install sdxpinn-mount-fix
     	
     	echo "sysfs-prep complete!"
     	echo "Visit https://github.com/iamromulan for more!"
