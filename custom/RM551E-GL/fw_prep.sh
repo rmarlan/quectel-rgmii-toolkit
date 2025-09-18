@@ -73,8 +73,8 @@ prep_sysfs() {
     	
     	# Install mount-fix
     	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	opkg install ./sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	#opkg install sdxpinn-mount-fix
+    	#opkg install /tmp/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	
     	
     	echo "sysfs-prep complete!"
     	echo "Visit https://github.com/iamromulan for more!"
