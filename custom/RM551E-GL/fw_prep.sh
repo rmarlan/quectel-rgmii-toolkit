@@ -23,7 +23,7 @@ prep_sysfs() {
 	remount_rw
 	#umount -lf /etc
 	umount -lf /etc
-	umount -lf /data
+	#umount -lf /data
 	#rm -rf /usrdata/etc
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
@@ -48,7 +48,8 @@ prep_sysfs() {
 	opkg install shadow-login
 	mv /bin/login /bin/login.old
 	cp /usr/bin/login /bin/login
-	
+	# Pre-set root password as iamromulan
+	echo -e "iamromulan\niamromulan" | passwd root
 
     # Check and download /etc/init.d/dropbear if missing
     [ -f /etc/init.d/dropbear ] || { 
@@ -65,18 +66,15 @@ prep_sysfs() {
 
 	service uhttpd enable
 	service dropbear enable
-	
-	# Pre-set root password as iamromulan
-	echo -e "iamromulan\niamromulan" | passwd root
     	
     	# Install first boot init
     	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-firstboot_1.0_sdxpinn.ipk
     	opkg install ./sdxpinn-firstboot_1.0_sdxpinn.ipk
     	
     	# Install mount-fix
-    	#curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	#opkg install ./sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	opkg install sdxpinn-mount-fix
+    	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	opkg install ./sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	#opkg install sdxpinn-mount-fix
     	
     	echo "sysfs-prep complete!"
     	echo "Visit https://github.com/iamromulan for more!"

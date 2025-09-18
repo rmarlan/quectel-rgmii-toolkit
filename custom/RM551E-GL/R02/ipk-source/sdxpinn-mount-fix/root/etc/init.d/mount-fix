@@ -8,29 +8,17 @@ start() {
     # Initialize log
     rm -f "$LOG_FILE" >/dev/null 2>&1
     touch "$LOG_FILE"
-
-    # Redirect all output (stdout and stderr) to the log file
-    exec >>"$LOG_FILE" 2>&1
-
-    echo "Begin mount fix process to make a usable userspace."
-        handle_new_firmware
-}
-
-
-
-handle_new_firmware() {
     # Redirect all output (stdout and stderr) to the log file
     exec >>"$LOG_FILE" 2>&1
     /bin/echo "Begin mount fix process to make a usable userspace"
 
     # Forcefully unmount /etc
-    /bin/echo "Unmounting the 2 mounts over /etc"
+    /bin/echo "Unmounting the mount over /etc"
     /bin/umount -lf /etc >/dev/null 2>&1
 
     # Remount root filesystem as read-write
     /bin/echo "Remounting / as read-write"
     /bin/mount -o remount,rw /
-
 
     # Ensure necessary directories exist for overlay and pivot_root
     /bin/echo "Creating new overlay system"
@@ -91,11 +79,11 @@ stop() {
         echo "Error: /real_rootfs does not exist. Cannot proceed with stop." >> "$LOG_FILE"
         return 1
     fi
+        return_to_factory
 
-        stop_handle_new_firmware
 }
 
-stop_handle_new_firmware() {
+return_to_factory() {
     # Redirect all output (stdout and stderr) to the log file
     exec >>"$LOG_FILE" 2>&1
     /bin/echo "Stopping and reverting overlay and pivot_root"
@@ -129,7 +117,11 @@ stop_handle_new_firmware() {
 	# Mount layer 2 /etc back
     /bin/mount --bind /usrdata/etc /etc
 
+	df -h
+	echo -e "\e[31m / is read-write right now. Be careful\e[0m"
+	echo -e "\e[31m Reboot or run mount -o remount,ro / \e[0m"
 }
+
 
 restart() {
     /bin/echo "This script should only be executed once at boot"
