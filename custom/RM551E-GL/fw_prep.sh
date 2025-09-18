@@ -67,13 +67,16 @@ prep_sysfs() {
 	service uhttpd enable
 	service dropbear enable
     	
+    	# Clear opkg lists
+    	rm -f /var/opkg-lists/* 2>/dev/null
+    	
     	# Install first boot init
     	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-firstboot_1.0_sdxpinn.ipk
     	opkg install ./sdxpinn-firstboot_1.0_sdxpinn.ipk
     	
     	# Install mount-fix
     	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
-    	#opkg install /tmp/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+    	opkg install /tmp/sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
     	
     	
     	echo "sysfs-prep complete!"
