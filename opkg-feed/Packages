@@ -197,8 +197,8 @@ Depends: libc
 Section: base
 Architecture: all
 Maintainer: Cameron Thompson iamromulan@github.com
-MD5Sum: 197b3618393e1565875c1c0967b3a68e
-Size: 3136
+MD5Sum: 70b4da65309b8fe0caa7b958e17d04c6
+Size: 3135
 Filename: sdxpinn-patch_2.6_all.ipk
 Source: github.com/iamromulan
 Description: A general first system patch for SDXPINN OpenWRT
