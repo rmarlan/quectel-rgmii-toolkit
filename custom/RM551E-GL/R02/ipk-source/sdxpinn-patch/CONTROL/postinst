@@ -1,5 +1,0 @@
-#!/bin/ash
-
-echo "Complete"
-
-exit 0

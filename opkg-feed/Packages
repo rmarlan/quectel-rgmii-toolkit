@@ -163,29 +163,43 @@ Description: A custom CLI menu system for mamnagment of Quectel RM5xx modems
 License: GPLv3
 
 
+Package: sdxpinn-firstboot
+Version: 1.0
+Depends: libc
+Section: system
+Architecture: sdxpinn
+Maintainer: Cameron Thompson iamromulan@github.com
+MD5Sum: d71d3ac8f4cd0c6d75f8f636b868aa72
+Size: 1109
+Filename: sdxpinn-firstboot_1.0_sdxpinn.ipk
+Source: github.com/iamromulan
+Description: A first boot init after a flash or factory reset
+License: GPLv3
+
+
 Package: sdxpinn-mount-fix
-Version: 1.3.2
+Version: 1.3.3
 Depends: libc
 Section: base
 Architecture: aarch64_cortex-a53
 Maintainer: iamromulan <https://github.com/iamromulan>
-MD5Sum: 004d4f1c792efc2d32c2de27629bae3b
-Size: 4648
-Filename: sdxpinn-mount-fix_1.3.2_aarch64_cortex-a53.ipk
+MD5Sum: 86c01bf7a877fb0d3adff5a7728ea801
+Size: 4614
+Filename: sdxpinn-mount-fix_1.3.3_aarch64_cortex-a53.ipk
 Source: github/iamromulan
 Description: Creates a usable mount space and overlay for SDXPINN modems. Dependencies bundled: libinotifytools and inotifywait
 License: GPLv3
 
 
 Package: sdxpinn-patch
-Version: 2.5
+Version: 2.6
 Depends: sdxpinn-mount-fix
 Section: base
 Architecture: all
 Maintainer: Cameron Thompson iamromulan@github.com
-MD5Sum: 0ec65238142dad95de1666b01a6f09c6
-Size: 3054
-Filename: sdxpinn-patch_2.5_all.ipk
+MD5Sum: 197b3618393e1565875c1c0967b3a68e
+Size: 3136
+Filename: sdxpinn-patch_2.6_all.ipk
 Source: github.com/iamromulan
 Description: A general first system patch for SDXPINN OpenWRT
 

@@ -18,6 +18,7 @@ fi
 service mount-fix start
 service mount-fix enable
 service mount-fix-final enable
+service mount-fix-final start
 
 echo -e "\e[32m sdxpinn-mount-fix installed! Here is the new file structure! \e[0m"
 echo -e "\e[32m ============================================================ \e[0m"
