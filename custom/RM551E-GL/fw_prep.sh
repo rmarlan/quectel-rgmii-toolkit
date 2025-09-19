@@ -25,6 +25,9 @@ prep_sysfs() {
 	umount -lf /etc
 	#umount -lf /data
 	touch /usrdata/etc/merged.done
+	mkdir /usrdata/overlay-work
+	mkdir /usrdata/overlay-work/etc-upper
+	touch /usrdata/overlay-work/etc-upper/merged.done
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
     	/bin/echo "Lets be sure your opkg config isn't using the old overlay"
