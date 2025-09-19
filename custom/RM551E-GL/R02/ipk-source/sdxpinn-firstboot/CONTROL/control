@@ -1,6 +1,0 @@
-Package: sdxpinn-firstboot
-Version: 1.0
-Architecture: sdxpinn
-Maintainer: Cameron Thompson iamromulan@github.com
-Source: github.com/iamromulan
-Description: A first boot init after a flash or factory reset

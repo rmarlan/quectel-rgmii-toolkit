@@ -1,5 +1,0 @@
-#!/bin/ash
-
-service first-boot enable
-
-exit 0
