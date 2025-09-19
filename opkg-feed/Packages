@@ -193,7 +193,7 @@ License: GPLv3
 
 Package: sdxpinn-patch
 Version: 2.6
-Depends: sdxpinn-mount-fix
+Depends: libc
 Section: base
 Architecture: all
 Maintainer: Cameron Thompson iamromulan@github.com
