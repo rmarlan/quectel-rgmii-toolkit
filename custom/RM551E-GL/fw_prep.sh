@@ -22,7 +22,7 @@ remount_ro() {
 prep_sysfs() {
 	remount_rw
 	#umount -lf /etc
-	umount -lf /etc
+	#umount -lf /etc
 	#umount -lf /data
 	#touch /usrdata/etc/merged.done
 	mkdir /usrdata/overlay-work
