@@ -39,7 +39,7 @@ prep_sysfs() {
     	fi
 
 	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/opkg-feed/sdxpinn-patch_2.6_all.ipk
-    	opkg install sdxpinn-patch_2.6_all.ipk
+    	opkg install ./sdxpinn-patch_2.6_all.ipk
 	opkg update
     	echo -e "\e[92m"
 	echo "iamromulan's ipk/opkg repo added!"
