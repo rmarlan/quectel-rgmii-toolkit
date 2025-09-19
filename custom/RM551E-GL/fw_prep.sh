@@ -24,7 +24,7 @@ prep_sysfs() {
 	#umount -lf /etc
 	umount -lf /etc
 	#umount -lf /data
-	touch /usrdata/etc/merged.done
+	#touch /usrdata/etc/merged.done
 	mkdir /usrdata/overlay-work
 	mkdir /usrdata/overlay-work/etc-upper
 	touch /usrdata/overlay-work/etc-upper/merged.done
