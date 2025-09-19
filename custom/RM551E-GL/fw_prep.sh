@@ -24,7 +24,7 @@ prep_sysfs() {
 	#umount -lf /etc
 	umount -lf /etc
 	#umount -lf /data
-	#rm -rf /usrdata/etc
+	touch /usrdata/etc/merged.done
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
     	/bin/echo "Lets be sure your opkg config isn't using the old overlay"
@@ -35,8 +35,8 @@ prep_sysfs() {
        	 /bin/echo "'option overlay_root /overlay' not found in /etc/opkg.conf, no changes made"
     	fi
 
-	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/custom/RM551E-GL/$FWBRANCH/ipk/sdxpinn-patch_2.5_all.ipk
-    	opkg install sdxpinn-patch_2.5_all.ipk
+	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/opkg-feed/sdxpinn-patch_2.6_all.ipk
+    	opkg install sdxpinn-patch_2.6_all.ipk
 	opkg update
     	echo -e "\e[92m"
 	echo "iamromulan's ipk/opkg repo added!"
