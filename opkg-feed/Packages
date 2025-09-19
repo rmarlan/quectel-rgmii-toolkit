@@ -178,14 +178,14 @@ License: GPLv3
 
 
 Package: sdxpinn-patch
-Version: 2.5
+Version: 2.6
 Depends: sdxpinn-mount-fix
 Section: base
 Architecture: all
 Maintainer: Cameron Thompson iamromulan@github.com
-MD5Sum: 0ec65238142dad95de1666b01a6f09c6
-Size: 3054
-Filename: sdxpinn-patch_2.5_all.ipk
+MD5Sum: 197b3618393e1565875c1c0967b3a68e
+Size: 3136
+Filename: sdxpinn-patch_2.6_all.ipk
 Source: github.com/iamromulan
 Description: A general first system patch for SDXPINN OpenWRT
 
