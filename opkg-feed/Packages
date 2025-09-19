@@ -163,6 +163,20 @@ Description: A custom CLI menu system for mamnagment of Quectel RM5xx modems
 License: GPLv3
 
 
+Package: sdxpinn-firstboot
+Version: 1.0
+Depends: libc
+Section: system
+Architecture: sdxpinn
+Maintainer: Cameron Thompson iamromulan@github.com
+MD5Sum: d71d3ac8f4cd0c6d75f8f636b868aa72
+Size: 1109
+Filename: sdxpinn-firstboot_1.0_sdxpinn.ipk
+Source: github.com/iamromulan
+Description: A first boot init after a flash or factory reset
+License: GPLv3
+
+
 Package: sdxpinn-mount-fix
 Version: 1.3.2
 Depends: libc
