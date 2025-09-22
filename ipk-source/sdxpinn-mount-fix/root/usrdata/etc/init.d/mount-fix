@@ -45,7 +45,7 @@ handle_old_firmware() {
     /bin/echo "Looking for evidence that this has already happened..."
     if [ ! -f /overlay/etc-upper/merged.done ]; then
         /bin/echo "/overlay/etc-upper/merged.done not found, merging /overlay/etc-upper/* to /etc/"
-        cp -rf /overlay/etc-upper/* /etc/
+        cp -rfP /overlay/etc-upper/* /etc/
         /bin/touch /overlay/etc-upper/merged.done
     else
         /bin/echo "/overlay/etc-upper/merged.done found, skipping merge"
@@ -129,7 +129,7 @@ handle_new_firmware() {
     /bin/echo "Looking for evidence that this has already happened..."
     if [ ! -f /usrdata/overlay-work/etc-upper/merged.done ]; then
         /bin/echo "/usrdata/overlay-work/etc-upper/merged.done not found, merging /usrdata/overlay-work/etc-upper/* to /usrdata/etc/"
-        cp -rf /usrdata/overlay-work/etc-upper/* /usrdata/etc/
+        cp -rfP /usrdata/overlay-work/etc-upper/* /usrdata/etc/
         /bin/touch /usrdata/overlay-work/etc-upper/merged.done
     else
         /bin/echo "/usrdata/overlay-work/etc-upper/merged.done found, skipping merge"
@@ -140,7 +140,7 @@ handle_new_firmware() {
     /bin/echo "Looking for evidence that this has already happened..."
     if [ ! -f /usrdata/etc/merged.done ]; then
         /bin/echo "/usrdata/etc/merged.done not found, merging /usrdata/etc/* to /etc/"
-        cp -rf /usrdata/etc/* /etc/
+        cp -rfP /usrdata/etc/* /etc/
         /bin/touch /usrdata/etc/merged.done
     else
         /bin/echo "/usrdata/etc/merged.done found, skipping merge"
