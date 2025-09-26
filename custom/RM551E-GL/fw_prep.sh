@@ -68,6 +68,14 @@ prep_sysfs() {
 	service dropbear enable
 	service uhttpd start
 	service dropbear start
+	
+	# Set system hostname and timezone
+	echo "Setting Hostname to RM551E-GL and time zone to Indianapolis"
+	uci set system.@system[0].hostname='RM551E-GL'
+	uci set system.@system[0].zonename='America/Indiana/Indianapolis'
+	uci set system.@system[0].timezone='EST5EDT,M3.2.0,M11.1.0'
+	uci commit system
+	service system reload
     	
     	echo "Stage 1 sysfs-prep complete!"
     	echo "Visit https://github.com/iamromulan for more!"
@@ -81,8 +89,15 @@ echo "Arming first-boot init"
 # Install first boot init
 opkg install sdxpinn-firstboot
 echo "Installing mount-fix"
+# Ensure rootfs etc is in sync with usrdata etc
+echo "Syncing etc"
+umount -lf /etc
+cp -rfP /usrdata/etc/* /usrdata/etc/
+mount --bind /usrdata/etc /etc
+
 # Install mount-fix
 opkg install sdxpinn-mount-fix
+
 echo "Stage 2 sysfs-prep complete!"
 echo "Visit https://github.com/iamromulan for more!"
 
