@@ -18,8 +18,6 @@ service mount-fix-final enable
             mount -o remount,rw /real_rootfs
             cp /etc/init.d/mount-fix /real_rootfs/etc/init.d/mount-fix
             cp /etc/init.d/mount-fix-final /real_rootfs/etc/init.d/mount-fix-final
-            cp -P /etc/rc.d/S03mount-fix /real_rootfs/etc/rc.d/S03mount-fix
-            cp -P /etc/rc.d/S13mount-fix-final /real_rootfs/etc/rc.d/S13mount-fix-final
             mount -o remount,ro /real_rootfs
         else
             echo "New R01 firmware scenario detected (/etc unmounted)."

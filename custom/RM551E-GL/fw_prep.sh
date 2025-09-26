@@ -21,7 +21,8 @@ remount_ro() {
 
 prep_sysfs() {
 	remount_rw
-	#umount -lf /etc
+	umount -lf /etc
+	cp -rfP /usrdata/etc/* /etc/
 	#umount -lf /etc
 	#umount -lf /data
 	#touch /usrdata/etc/merged.done
@@ -91,8 +92,7 @@ opkg install sdxpinn-firstboot
 echo "Installing mount-fix"
 # Ensure rootfs etc is in sync with usrdata etc
 echo "Syncing etc"
-umount -lf /etc
-cp -rfP /usrdata/etc/* /etc/
+cp -rfP /etc/* /usrdata/etc/
 mount --bind /usrdata/etc /etc
 
 # Install mount-fix
@@ -117,10 +117,7 @@ prep_usrdata() {
 
 capture() {
 	mount -o remount,rw /real_rootfs
-	mount -o remount,rw /etc/rc.d/
-	cp -rfP /etc/* /real_rootfs/etc/
-	cp -rfP /usrdata/etc/rc.d/* /real_rootfs/rc.d/
-	cp -rfP /usrdata/rootfs/usr/* /real_rootfs/usr/
+	cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
 	mount -o remount,ro /real_rootfs
 	mount -o remount,ro /etc/rc.d
     	echo -e "\e[92m"
