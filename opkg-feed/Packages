@@ -169,8 +169,8 @@ Depends: libc
 Section: system
 Architecture: sdxpinn
 Maintainer: Cameron Thompson iamromulan@github.com
-MD5Sum: d71d3ac8f4cd0c6d75f8f636b868aa72
-Size: 1109
+MD5Sum: aa6815442a0e53efe5c1fe834f1a64ad
+Size: 1117
 Filename: sdxpinn-firstboot_1.0_sdxpinn.ipk
 Source: github.com/iamromulan
 Description: A first boot init after a flash or factory reset
