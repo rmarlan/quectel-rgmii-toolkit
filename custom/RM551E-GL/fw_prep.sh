@@ -101,6 +101,8 @@ prep_usrdata() {
 }
 
 capture() {
+	mount -o remount,rw /real_rootfs
+	cp -a /etc/. /real_rootfs/etc/
 	mount -o remount,ro /real_rootfs
 	mount -o remount,ro /etc/rc.d
     	echo -e "\e[92m"
