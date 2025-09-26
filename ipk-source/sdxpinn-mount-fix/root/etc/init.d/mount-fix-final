@@ -1,8 +1,19 @@
 #!/bin/sh /etc/rc.common
 
-START=04
+START=13
+
+LOG_FILE="/tmp/mount-fix-final.log"
 
 start() {
+    # Initialize log
+    rm -f "$LOG_FILE" >/dev/null 2>&1
+    touch "$LOG_FILE"
+
+    # Redirect all output (stdout and stderr) to the log file
+    exec >>"$LOG_FILE" 2>&1
+    
+    # mount the overlayfs as rw
+    /bin/mount -o remount,rw /
     # mount the bind mount as rw
     /bin/mount -o remount,rw /etc/rc.d
 }
@@ -10,6 +21,8 @@ start() {
 stop() {
     # mount the bind mount as ro
     /bin/mount -o remount,ro /etc/rc.d
+    # mount the overlayfs as ro
+    /bin/mount -o remount,ro /
 }
 
 restart() {
