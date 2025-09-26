@@ -92,7 +92,7 @@ echo "Installing mount-fix"
 # Ensure rootfs etc is in sync with usrdata etc
 echo "Syncing etc"
 umount -lf /etc
-cp -rfP /usrdata/etc/* /usrdata/etc/
+cp -rfP /usrdata/etc/* /etc/
 mount --bind /usrdata/etc /etc
 
 # Install mount-fix
