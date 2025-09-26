@@ -22,7 +22,6 @@ remount_ro() {
 prep_sysfs() {
 	remount_rw
 	umount -lf /etc
-	cp -rfP /usrdata/etc/* /etc/
 	#umount -lf /etc
 	#umount -lf /data
 	#touch /usrdata/etc/merged.done
@@ -90,13 +89,10 @@ echo "Arming first-boot init"
 # Install first boot init
 opkg install sdxpinn-firstboot
 echo "Installing mount-fix"
-# Ensure rootfs etc is in sync with usrdata etc
-echo "Syncing etc"
-cp -rfP /etc/* /usrdata/etc/
 mount --bind /usrdata/etc /etc
-
 # Install mount-fix
 opkg install sdxpinn-mount-fix
+mount -o remount,rw /etc/rc.d
 
 echo "Stage 2 sysfs-prep complete!"
 echo "Visit https://github.com/iamromulan for more!"
@@ -118,6 +114,7 @@ prep_usrdata() {
 capture() {
 	mount -o remount,rw /real_rootfs
 	cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
+	cp -rn /real_rootfs/etc/init.d/* /etc/init.d/
 	mount -o remount,ro /real_rootfs
 	mount -o remount,ro /etc/rc.d
     	echo -e "\e[92m"

@@ -26,6 +26,7 @@ start_service() {
     
     echo "Removing first-boot service"
     rm /real_rootfs/etc/init.d/first-boot
+    rm /etc/init.d/first-boot
     
     echo "First boot script completed: $(date)"
 }
