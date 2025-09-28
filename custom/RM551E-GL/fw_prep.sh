@@ -20,10 +20,8 @@ remount_ro() {
 
 prep_sysfs() {
 	remount_rw
-	echo "Setting up temp /etc overlay"
-	mkdir /usrdata/tmp_etc
-	mkdir /usrdata/tmp_etc_work
-	mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/tmp_etc,workdir=/usrdata/tmp_etc_work /etc
+	echo "Unmounting /etc from usrdata"
+	umount -lf /etc
 	echo "Starting phase 1 prep"
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
@@ -71,11 +69,17 @@ prep_sysfs() {
 	
 	# Set system hostname and timezone
 	echo "Setting Hostname to RM551E-GL and time zone to Indianapolis"
+	cp /usrdata/etc/config/system /etc/config/system
 	uci set system.@system[0].hostname='RM551E-GL'
 	uci set system.@system[0].zonename='America/Indiana/Indianapolis'
 	uci set system.@system[0].timezone='EST5EDT,M3.2.0,M11.1.0'
 	uci commit system
 	service system reload
+	
+    	echo "Copying needed files to usrdata etc"
+    	cp -rf /etc/opkg/* /usrdata/etc/opkg/
+    	cp -f /etc/opkg.conf /usrdata/etc/opkg.conf
+    	cp -f /etc/config/system /usrdata/etc/config/system
     	
     	echo "Stage 1 sysfs-prep complete!"
     	echo "Luci and Dropbear are now running."
@@ -94,19 +98,13 @@ echo "Arming first-boot init"
 opkg install sdxpinn-firstboot
 
 echo "Installing mount-fix"
-umount -lf /etc
-cp -rfP /usrdata/tmp_etc/* /etc/
+mount -o bind /usrdata/etc /etc
+sleep 1
 opkg install sdxpinn-mount-fix
-umount -lf /etc/rc.d
 mount -o remount,rw /real_rootfs
-cp -rfP /usrdata/tmp_etc/* /real_rootfs/etc/
 cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
-mount -o remount,ro /real_rootfs
-mount -o bind,ro /real_rootfs/etc/rc.d /etc/rc.d
-mount -o remount,rw /etc/rc.d
-echo "Cleaning temp /etc overlay upper for use with the usrdata image"
-rm -rf /usrdata/tmp_etc
-rm -rf /usrdata/tmp_etc_work
+umount -lf /etc
+echo "Creating a temp /etc overlay for use with the usrdata image"
 mkdir /usrdata/tmp_etc
 mkdir /usrdata/tmp_etc_work
 mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/tmp_etc,workdir=/usrdata/tmp_etc_work /etc
