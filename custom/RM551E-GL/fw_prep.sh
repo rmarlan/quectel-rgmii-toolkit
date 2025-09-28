@@ -86,6 +86,7 @@ prep_sysfs() {
 
 prep_final_sysfs() {
 echo "Begin Final sysfs prep"
+remount_rw
 opkg update
 
 echo "Arming first-boot init"
@@ -94,11 +95,11 @@ opkg install sdxpinn-firstboot
 
 echo "Installing mount-fix"
 umount -lf /etc
+cp -rfP /usrdata/tmp_etc/* /etc/
 opkg install sdxpinn-mount-fix
 umount -lf /etc/rc.d
 mount -o remount,rw /real_rootfs
 cp -rfP /usrdata/tmp_etc/* /real_rootfs/etc/
-cp -rfP /usrdata/tmp_etc/* /etc/
 cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
 mount -o remount,ro /real_rootfs
 mount -o bind,ro /real_rootfs/etc/rc.d /etc/rc.d
