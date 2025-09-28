@@ -107,8 +107,8 @@ Depends: libc, zerotier
 Section: luci
 Architecture: all
 Maintainer: OpenWrt LuCI community
-MD5Sum: fa1e73464831a57385aec5ee6984cac5
-Size: 3242
+MD5Sum: 5162741ae415eb498fbdb84100212c57
+Size: 3230
 Filename: luci-app-zerotier_1.0-20_all.ipk
 Source: photonicat/feeds/luci/applications/luci-app-zerotier
 Description: Luci app for zerotier
@@ -358,8 +358,8 @@ Version: 1.14.1-1
 Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
 Architecture: aarch64_cortex-a53
 Maintainer: Moritz Warning <moritzwarning@web.de>
-MD5Sum: dd5eb36df629a2eddf000e4c79464e30
-Size: 557571
+MD5Sum: 70a67e308617d07b1f4feb7036ba2d3b
+Size: 557648
 Filename: zerotier_1.14.1-1_aarch64_cortex-a53.ipk
 Source: feeds/packages/net/zerotier
 Description: ZeroTier creates a global provider-independent virtual private cloud network.
