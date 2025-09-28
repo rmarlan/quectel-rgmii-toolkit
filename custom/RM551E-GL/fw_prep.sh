@@ -6,8 +6,7 @@ GITREPO="quectel-rgmii-toolkit"
 GITTREE="SDXPINN"
 GITMAINTREE="SDXPINN"
 GITDEVTREE="development-SDXPINN"
-#FWBRANCH="R01"
-FWBRANCH="R02"
+
 
 # Function to remount file system as read-write
 remount_rw() {
@@ -21,18 +20,19 @@ remount_ro() {
 
 prep_sysfs() {
 	remount_rw
-	umount -lf /etc
-	#umount -lf /etc
-	#umount -lf /data
-	#touch /usrdata/etc/merged.done
+	echo "Setting up temp /etc overlay"
+	mkdir /usrdata/tmp_etc
+	mkdir /usrdata/tmp_etc_work
+	mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/tmp_etc,workdir=/usrdata/tmp_etc_work /etc
+	echo "Starting phase 1 prep"
 	cd /tmp
 	# Check if /etc/opkg.conf has a line containing "option overlay_root /overlay" and remove it if it exists
-    	/bin/echo "Lets be sure your opkg config isn't using the old overlay"
+    	echo "Lets be sure your opkg config isn't using the old overlay"
     	if grep -q "option overlay_root /overlay" /etc/opkg.conf; then
-        	/bin/echo "Removing 'option overlay_root /overlay' from /etc/opkg.conf"
+        	echo "Removing 'option overlay_root /overlay' from /etc/opkg.conf"
         	sed -i '/option overlay_root \/overlay/d' /etc/opkg.conf
     	else
-       	 /bin/echo "'option overlay_root /overlay' not found in /etc/opkg.conf, no changes made"
+       	 echo "'option overlay_root /overlay' not found in /etc/opkg.conf, no changes made"
     	fi
 
 	curl -O https://raw.githubusercontent.com/$GITUSER/$GITREPO/$GITTREE/opkg-feed/sdxpinn-patch_2.6_all.ipk
@@ -71,7 +71,6 @@ prep_sysfs() {
 	
 	# Set system hostname and timezone
 	echo "Setting Hostname to RM551E-GL and time zone to Indianapolis"
-	cp /usrdata/etc/config/system /etc/config/system
 	uci set system.@system[0].hostname='RM551E-GL'
 	uci set system.@system[0].zonename='America/Indiana/Indianapolis'
 	uci set system.@system[0].timezone='EST5EDT,M3.2.0,M11.1.0'
@@ -79,6 +78,8 @@ prep_sysfs() {
 	service system reload
     	
     	echo "Stage 1 sysfs-prep complete!"
+    	echo "Luci and Dropbear are now running."
+    	echo "You may now make additional edits before final sysfs prep."
     	echo "Visit https://github.com/iamromulan for more!"
     	echo -e "\e[0m"
 }
@@ -86,56 +87,54 @@ prep_sysfs() {
 prep_final_sysfs() {
 echo "Begin Final sysfs prep"
 opkg update
+
 echo "Arming first-boot init"
 # Install first boot init
 opkg install sdxpinn-firstboot
 
-echo "Setting up temp /etc overlay"
-
-mkdir /usrdata/tmp_etc
-mkdir /usrdata/tmp_etc_work
-mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/tmp_etc,workdir=/usrdata/tmp_etc_work /etc
-
 echo "Installing mount-fix"
-
-# Install mount-fix
+umount -lf /etc
 opkg install sdxpinn-mount-fix
+umount -lf /etc/rc.d
+mount -o remount,rw /real_rootfs
+cp -rfP /usrdata/tmp_etc/* /real_rootfs/etc/
+cp -rfP /usrdata/tmp_etc/* /etc/
+cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
+mount -o remount,ro /real_rootfs
+mount -o bind,ro /real_rootfs/etc/rc.d /etc/rc.d
 mount -o remount,rw /etc/rc.d
 
 echo "Stage 2 sysfs-prep complete!"
+echo "You may now continue to make edits, these will be part of /usrdata/rootfs and /usrdata/etc though."
 echo "Visit https://github.com/iamromulan for more!"
 
 }
 
 prep_usrdata() {
-	echo "Disabled"
-	return
+	echo "Installing larger Packages part of /usrdata"
 	opkg update
-    	echo -e "\e[92m"
-	echo "Nah"
-    	
-    	echo "sysfs-prep complete!"
-    	echo "Visit https://github.com/iamromulan for more!"
-    	echo -e "\e[0m"
+	# opkg install things you want that are too large to be part of the main sysfs.ubi
+	# Keep in mind AT+QCFG="resetfactory" will remove anything inside of usrdata
+	
+
 }
 
 capture() {
-	mount -o remount,rw /real_rootfs
-	cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
-	cp -rn /real_rootfs/etc/init.d/* /etc/init.d/
 	mount -o remount,ro /real_rootfs
 	mount -o remount,ro /etc/rc.d
     	echo -e "\e[92m"
     	#For R01
 	#dd if=/dev/mtd35 of=/usrdata/sysfs.ubi bs=4096
 	#For R02
+	echo "Capturing MTD block 55 to /usrdata/sysfs.ubi"
 	dd if=/dev/mtd55 of=/usrdata/sysfs.ubi bs=4096
 	#For edits after mount-fix is in place
-    	#tar -czf /usrdata/usrdata.tar.gz /usrdata/rootfs /usrdata/rootfs-workdir
+	echo "Capturing directories needed for usrdata.ubi to /usrdata/usrdata.tar.gz"
+    	tar -czf /usrdata/usrdata.tar.gz /usrdata/rootfs /usrdata/rootfs-workdir /usrdata/etc
     	echo "Capture complete!"
     	echo "Now do..."
     	echo "adb pull /usrdata/sysfs.ubi"
-    	#echo "adb pull /usrdata/usrdata.tar.gz"
+    	echo "adb pull /usrdata/usrdata.tar.gz"
     	echo "Visit https://github.com/iamromulan for more!"
     	echo -e "\e[0m"
 }
