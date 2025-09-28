@@ -219,14 +219,14 @@ Description: A general first system patch for SDXPINN OpenWRT
 
 Package: sdxpinn-quecmanager
 Version: 2.3.1
-Depends: sdxpinn-mount-fix, sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
+Depends: sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager-beta
 Section: admin
-Architecture: aarch64_cortex-a53
+Architecture: sdxpinn
 Maintainer: Russel Yasol <https://github.com/dr-dolomite> Cameron Thompson <https://github.com/iamromulan>
-MD5Sum: 90a1059b2eecf73a54bc67d0036a8306
-Size: 1183330
-Filename: sdxpinn-quecmanager_2.3.1_aarch64_cortex-a53.ipk
+MD5Sum: d4fed05bc9f2267462f0ce48cf6865b7
+Size: 1182792
+Filename: sdxpinn-quecmanager_2.3.1_sdxpinn.ipk
 Source: github/iamromulan
 Description: A custom web UI desgined to run alongside luci for Quectel RM55x modems
 License: GPLv3
@@ -234,14 +234,14 @@ License: GPLv3
 
 Package: sdxpinn-quecmanager-beta
 Version: 2.3.3
-Depends: sdxpinn-mount-fix, sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
+Depends: sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager
 Section: admin
-Architecture: aarch64_cortex-a53
+Architecture: sdxpinn
 Maintainer: Russel Yasol <https://github.com/dr-dolomite> Cameron Thompson <https://github.com/iamromulan>
-MD5Sum: 283a3908de7cb27ba0d2a47ec53541a6
-Size: 1209400
-Filename: sdxpinn-quecmanager-beta_2.3.3_aarch64_cortex-a53.ipk
+MD5Sum: 6483456d508f0a02f946b5af90dfe32a
+Size: 1209225
+Filename: sdxpinn-quecmanager-beta_2.3.3_sdxpinn.ipk
 Source: github/iamromulan
 Description: BETA: A custom web UI desgined to run alongside luci for Quectel RM55x modems
 License: GPLv3
