@@ -104,9 +104,16 @@ cp -rfP /usrdata/rootfs/usr/lib/opkg/* /real_rootfs/usr/lib/opkg/
 mount -o remount,ro /real_rootfs
 mount -o bind,ro /real_rootfs/etc/rc.d /etc/rc.d
 mount -o remount,rw /etc/rc.d
+echo "Cleaning temp /etc overlay upper for use with the usrdata image"
+rm -rf /usrdata/tmp_etc
+rm -rf /usrdata/tmp_etc_work
+mkdir /usrdata/tmp_etc
+mkdir /usrdata/tmp_etc_work
+mount -t overlay overlay -o lowerdir=/etc,upperdir=/usrdata/tmp_etc,workdir=/usrdata/tmp_etc_work /etc
 
 echo "Stage 2 sysfs-prep complete!"
-echo "You may now continue to make edits, these will be part of /usrdata/rootfs and /usrdata/etc though."
+echo "You may now continue to make edits, these will be part of /usrdata/rootfs and /usrdata/tmp_etc though."
+echo "These edits will be captured later (option 4) into /usrdata/usrdata.tar.gz so you add them to usrdata.ubi"
 echo "Visit https://github.com/iamromulan for more!"
 
 }
@@ -117,13 +124,9 @@ prep_usrdata() {
 	# opkg install things you want that are too large to be part of the main sysfs.ubi
 	# Keep in mind AT+QCFG="resetfactory" will remove anything inside of usrdata
 	
-
 }
 
 capture() {
-	mount -o remount,ro /real_rootfs
-	mount -o remount,ro /etc/rc.d
-	rm -rf /usrdata/tmp_etc
     	echo -e "\e[92m"
     	#For R01
 	#dd if=/dev/mtd35 of=/usrdata/sysfs.ubi bs=4096
@@ -132,11 +135,13 @@ capture() {
 	dd if=/dev/mtd55 of=/usrdata/sysfs.ubi bs=4096
 	#For edits after mount-fix is in place
 	echo "Capturing directories needed for usrdata.ubi to /usrdata/usrdata.tar.gz"
-    	tar -czf /usrdata/usrdata.tar.gz /usrdata/rootfs /usrdata/rootfs-workdir /usrdata/etc
+    	tar -czf /usrdata/usrdata.tar.gz /usrdata/rootfs /usrdata/rootfs-workdir /usrdata/tmp_etc
     	echo "Capture complete!"
     	echo "Now do..."
     	echo "adb pull /usrdata/sysfs.ubi"
     	echo "adb pull /usrdata/usrdata.tar.gz"
+    	echo "In your usrdata.ubi place rootfs, rootfs-workdir, and tmp_etc inside."
+    	echo "Then Rename tmp_etc to etc and you are all set."
     	echo "Visit https://github.com/iamromulan for more!"
     	echo -e "\e[0m"
 }
