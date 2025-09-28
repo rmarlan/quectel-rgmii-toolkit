@@ -123,6 +123,7 @@ prep_usrdata() {
 capture() {
 	mount -o remount,ro /real_rootfs
 	mount -o remount,ro /etc/rc.d
+	rm -rf /usrdata/tmp_etc
     	echo -e "\e[92m"
     	#For R01
 	#dd if=/dev/mtd35 of=/usrdata/sysfs.ubi bs=4096
