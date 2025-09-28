@@ -101,6 +101,19 @@ Source: github/iamromulan
 Description: Luci app for tailscale
 
 
+Package: luci-app-zerotier
+Version: 1.0-20
+Depends: libc, zerotier
+Section: luci
+Architecture: all
+Maintainer: OpenWrt LuCI community
+MD5Sum: 5162741ae415eb498fbdb84100212c57
+Size: 3230
+Filename: luci-app-zerotier_1.0-20_all.ipk
+Source: photonicat/feeds/luci/applications/luci-app-zerotier
+Description: Luci app for zerotier
+
+
 Package: luci-lua-runtime
 Version: 25.034.70690~7b0663a-sdxpinn
 Architecture: sdxpinn
