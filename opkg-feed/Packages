@@ -102,15 +102,15 @@ Description: Luci app for tailscale
 
 
 Package: luci-app-zerotier
-Version: 1.0-20
+Version: 1.14.1-1
 Depends: libc, zerotier
 Section: luci
 Architecture: all
 Maintainer: OpenWrt LuCI community
-MD5Sum: 5162741ae415eb498fbdb84100212c57
-Size: 3230
-Filename: luci-app-zerotier_1.0-20_all.ipk
-Source: photonicat/feeds/luci/applications/luci-app-zerotier
+MD5Sum: 019ca0d09aaf2cba269325fc71b733b4
+Size: 5896
+Filename: luci-app-zerotier_1.14.1-1_all.ipk
+Source: feeds/kiddin9/luci-app-zerotier
 Description: Luci app for zerotier
 
 
@@ -351,5 +351,18 @@ Size: 3677883
 Filename: wgcf_2.2.24_aarch64_generic.ipk
 Source: github.com/ViRb3/wgcf/releases
 Description: wgcf is an unofficial, cross-platform CLI for Cloudflare Warp
+
+
+Package: zerotier
+Version: 1.14.1-1
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+License: BSL 1.1
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 557867
+Filename: zerotier_1.14.1-1_aarch64_cortex-a53.ipk
+Size: 557788
+SHA256sum: 7b1c1d98a04d8fdbae98fe495e7003531cd5cf46547c9addccf0923342e87f81
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 
 
