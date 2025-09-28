@@ -353,16 +353,3 @@ Source: github.com/ViRb3/wgcf/releases
 Description: wgcf is an unofficial, cross-platform CLI for Cloudflare Warp
 
 
-Package: zerotier
-Version: 1.14.1-1
-Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
-License: BSL 1.1
-Section: net
-Architecture: aarch64_cortex-a53
-Installed-Size: 557867
-Filename: zerotier_1.14.1-1_aarch64_cortex-a53.ipk
-Size: 557788
-SHA256sum: 7b1c1d98a04d8fdbae98fe495e7003531cd5cf46547c9addccf0923342e87f81
-Description:  ZeroTier creates a global provider-independent virtual private cloud network.
-
-
