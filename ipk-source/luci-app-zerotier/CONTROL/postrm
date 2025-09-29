@@ -1,0 +1,11 @@
+#!/bin/sh
+# postrm runs after package is removed, opkg is unlocked
+
+if [ -f /tmp/zerotier-cleanup.txt ]; then
+    while read pkg; do
+        opkg remove "$pkg"
+    done < /tmp/zerotier-cleanup.txt
+    rm -f /tmp/zerotier-cleanup.txt
+fi
+
+exit 0

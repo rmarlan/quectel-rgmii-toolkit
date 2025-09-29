@@ -1,12 +1,10 @@
 Package: luci-app-zerotier
-Version: 1.14.1-1
+Version: 1.0
 Depends: libc, zerotier
-Source: feeds/kiddin9/luci-app-zerotier
-SourceName: luci-app-zerotier
+Source: github.com/iamromulan
 Section: luci
-SourceDateEpoch: 1754481838
-URL: https://github.com/openwrt/luci
-Maintainer: OpenWrt LuCI community
+URL: https://github.com/iamromulan
+Maintainer: iamromulan
 Architecture: all
 Installed-Size: 30720
-Description:  LuCI for Zerotier
+Description:  Wrapper package that auto installs the correct luci-app-zerotier for your OpenWRT version (22 or 23).
