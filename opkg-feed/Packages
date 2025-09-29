@@ -102,14 +102,40 @@ Description: Luci app for tailscale
 
 
 Package: luci-app-zerotier
+Version: 1.0
+Depends: libc, zerotier
+Section: luci
+Architecture: all
+Maintainer: iamromulan
+MD5Sum: 62dccab49d8f53ce08f8650eda0c547d
+Size: 1399
+Filename: luci-app-zerotier_1.0_all.ipk
+Source: github.com/iamromulan
+Description: Wrapper package that auto installs the correct luci-app-zerotier for your OpenWRT version (22 or 23).
+
+
+Package: luci-app-zerotier-22
+Version: 1.0-20
+Depends: libc, zerotier
+Section: luci
+Architecture: all
+Maintainer: OpenWrt LuCI community
+MD5Sum: 7a0d9d5a33eb2fce4f03363ff1446c0c
+Size: 3257
+Filename: luci-app-zerotier-22_1.0-20_all.ipk
+Source: feeds/luci/applications/luci-app-zerotier
+Description: LuCI for Zerotier on OpenWRT 22
+
+
+Package: luci-app-zerotier-23
 Version: 1.14.1-1
 Depends: libc, zerotier
 Section: luci
 Architecture: all
 Maintainer: OpenWrt LuCI community
-MD5Sum: 019ca0d09aaf2cba269325fc71b733b4
-Size: 5896
-Filename: luci-app-zerotier_1.14.1-1_all.ipk
+MD5Sum: b6818c3c17ebef35a3fcc7653e9e3827
+Size: 5891
+Filename: luci-app-zerotier-23_1.14.1-1_all.ipk
 Source: feeds/kiddin9/luci-app-zerotier
 Description: Luci app for zerotier
 
