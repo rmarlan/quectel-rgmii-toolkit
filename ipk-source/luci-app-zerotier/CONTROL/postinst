@@ -1,0 +1,34 @@
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] && exit 0
+
+# Create installation script
+cat > /tmp/zerotier-install.sh <<'EOFSCRIPT'
+#!/bin/sh
+sleep 2  # Wait for opkg to release lock
+
+. /etc/os-release
+MAJOR_VERSION=$(echo $VERSION_ID | cut -d'.' -f1)
+
+logger -t zerotier-wrapper "Detected OpenWrt $VERSION_ID"
+
+if [ "$MAJOR_VERSION" = "22" ]; then
+    logger -t zerotier-wrapper "Installing luci-app-zerotier-22"
+    opkg update
+    opkg install luci-app-zerotier-22
+else
+    # Version 23, 24, or newer - all use the v23 package
+    logger -t zerotier-wrapper "Installing luci-app-zerotier-23"
+    opkg update
+    opkg install luci-app-zerotier-23
+fi
+
+# Cleanup
+rm -f /tmp/zerotier-install.sh
+EOFSCRIPT
+
+chmod +x /tmp/zerotier-install.sh
+
+# Run in background
+/tmp/zerotier-install.sh &
+
+exit 0

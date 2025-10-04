@@ -1,0 +1,32 @@
+#!/bin/sh /etc/rc.common
+START=99
+STOP=15
+USE_PROCD=1
+start_service() {
+    # Create log file
+    touch /usrdata/first-boot.log
+    
+    # Redirect all output to log file
+    exec >>/usrdata/first-boot.log 2>&1
+    
+    echo "Starting first boot script: $(date)"
+    
+    echo "Remounting the real rootfs as rw"
+    mount -o remount,rw /real_rootfs
+    
+    echo "Sending AT Commands"
+    atcmd 'AT+QCFG="usbnet",1'
+    atcmd 'AT+QCFG="pcie/mode",1'
+    
+    echo "Disabling first-boot service"
+    service first-boot disable
+    
+    echo "Restarting modem"
+    atcmd 'AT+CFUN=1,1'
+    
+    echo "Removing first-boot service"
+    rm /real_rootfs/etc/init.d/first-boot
+    rm /etc/init.d/first-boot
+    
+    echo "First boot script completed: $(date)"
+}

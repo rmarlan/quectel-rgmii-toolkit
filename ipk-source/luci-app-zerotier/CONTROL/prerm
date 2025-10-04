@@ -1,0 +1,13 @@
+#!/bin/sh
+# prerm runs before the package is removed, opkg is locked here too
+
+# Check which version to remove
+if opkg list-installed | grep -q "^luci-app-zerotier-22 "; then
+    echo "luci-app-zerotier-22" > /tmp/zerotier-cleanup.txt
+fi
+
+if opkg list-installed | grep -q "^luci-app-zerotier-23 "; then
+    echo "luci-app-zerotier-23" >> /tmp/zerotier-cleanup.txt
+fi
+
+exit 0
