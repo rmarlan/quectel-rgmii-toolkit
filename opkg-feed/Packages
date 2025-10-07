@@ -259,15 +259,15 @@ License: GPLv3
 
 
 Package: sdxpinn-quecmanager-beta
-Version: 2.3.3
+Version: 2.3.4
 Depends: sdxpinn-patch (>= 2.5), libc, inotifywait, coreutils-timeout, uhttpd, sms-tool (>= 2025.1.19-APmod-iamromulan), jq, ookla-speedtest
 Conflicts: sdxpinn-quecmanager
 Section: admin
 Architecture: sdxpinn
 Maintainer: Russel Yasol <https://github.com/dr-dolomite> Cameron Thompson <https://github.com/iamromulan>
-MD5Sum: 6483456d508f0a02f946b5af90dfe32a
-Size: 1209225
-Filename: sdxpinn-quecmanager-beta_2.3.3_sdxpinn.ipk
+MD5Sum: b98e39c1ebf92808662a16c51bad2f91
+Size: 1535283
+Filename: sdxpinn-quecmanager-beta_2.3.4_sdxpinn.ipk
 Source: github/iamromulan
 Description: BETA: A custom web UI desgined to run alongside luci for Quectel RM55x modems
 License: GPLv3
